@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>	regular.express
+	<title>	#test - regular.express
 </title>
 	
 	<meta charset="utf-8">
@@ -22,7 +22,7 @@
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
 </head>
 <body>
 	<header class="clearfix">
@@ -48,71 +48,17 @@
 	</header>
 	
 	<div id="content">
-<section id="welcome">
-	<h1>
-		Test and share regular expressions with simple tool<br>
-		running in fully isolated environment
-	</h1>
+	<section class="header">
+		<h1>
+			<span class="gloomy">#</span>
+			<span>test</span>
+		</h1>
+	</section>
 
-	<div class="buttons">
-		<a href="/dowload">download</a>
-	</div>
-
-	<div class="screenshot">
-		<img src="https://placehold.it/700x300">
-	</div>
-</section>
-
-<section id="search">
-	<div id="search-bar">
-		<input type="text" name="search" placeholder="Search for regex test result of modules">
-		<i class="fa fa-search" aria-hidden="true"></i>
-	</div>
-
-	<div class="tags">
-		<a href="/tag/helloworld">
-			<span class="tag">
-				# helloworld
-			</span>
-		</a>
-		<a href="/tag/java">
-			<span class="tag">
-				# java
-			</span>
-		</a>
-		<a href="/tag/phone">
-			<span class="tag">
-				# phone
-			</span>
-		</a>
-		<a href="/tag/test">
-			<span class="tag">
-				# test
-			</span>
-		</a>
-	</div>
-</section>
-
-
-<section id="news">
-	<h2 class="ctr">New sharings</h2>
-	
-	<i class="fa fa-chevron-left prev-btn"></i>
-	<i class="fa fa-chevron-right next-btn"></i>
-
-	<div class="groups">
-		<div class="container clearfix" style="width: 1056px">
-			<section>
-				<div class="header">
-					<h3>
-						<a href="/env/hive" class="color-hive">
-							<i class="devicon-apache-plain"></i>
-							<span>hive</span>
-						</a>
-					</h3>
-				</div>
-				<ul class="items">
-					<li><div class="share-tile">
+		<h2 class="ctr">Sharings</h2>
+	<section>
+			<ul id="lists" class="clearfix">
+				<li><div class="share-tile">
 	<a href="/share/853da67c4acd07ba9e1abfa5a50029e6">
 		<h4>
 			Hive2 example sharing
@@ -171,24 +117,7 @@
 	</div>
 </div>
 </li>
-				</ul>
-				
-				<div class="footer">
-					<a href="/env/hive" class="show-more">show more</a>
-				</div>
-
-			</section>
-			<section>
-				<div class="header">
-					<h3>
-						<a href="/env/python" class="color-python">
-							<i class="devicon-python-plain"></i>
-							<span>python</span>
-						</a>
-					</h3>
-				</div>
-				<ul class="items">
-					<li><div class="share-tile">
+				<li><div class="share-tile">
 	<a href="/share/a69425f9d9dc1b1d70b5a813c7729539">
 		<h4>
 			hello world
@@ -242,7 +171,60 @@
 	</div>
 </div>
 </li>
-					<li><div class="share-tile">
+				<li><div class="share-tile">
+	<a href="/share/a69425f9d9dc1b1d70b5a813c77287f6">
+		<h4>
+			test1
+		</h4>
+		<div class="description">
+			test1 !!
+		</div>
+	</a>
+
+	<div class="tags">
+		<a href="/env/java/oracle-jdk8">
+			<span class="tag tag-mini tag-special">
+				&gt; oracle-jdk8
+			</span>
+		</a>
+	
+		<a href="/tag/test">
+			<span class="tag tag-mini">
+				# test
+			</span>
+		</a>
+		<a href="/tag/java">
+			<span class="tag tag-mini">
+				# java
+			</span>
+		</a>
+	</div>
+
+	<ul class="properties">
+				<li>
+	<span class="key">match</span>
+	<span class="value">(.*)</span>
+</li>
+
+				<li>
+	<span class="key">replace</span>
+	<span class="value">$1</span>
+</li>
+
+	</ul>
+
+	<div class="last clearfix">
+		<div class="author fl">
+			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
+			<span class="author-name">Youngsoo Lee</span>
+		</div>
+		<div class="created fr">
+			2016-09-28 10:09:11
+		</div>
+	</div>
+</div>
+</li>
+				<li><div class="share-tile">
 	<a href="/share/ca3dfe24aaeca03b02f6e99b85a4c20b">
 		<h4>
 			phone number replace
@@ -297,116 +279,9 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 	</div>
 </div>
 </li>
-				</ul>
-				
-				<div class="footer">
-					<a href="/env/python" class="show-more">show more</a>
-				</div>
+			</ul>
+	</section>
 
-			</section>
-			<section>
-				<div class="header">
-					<h3>
-						<a href="/env/java" class="color-java">
-							<i class="devicon-java-plain"></i>
-							<span>java</span>
-						</a>
-					</h3>
-				</div>
-				<ul class="items">
-					<li><div class="share-tile">
-	<a href="/share/a69425f9d9dc1b1d70b5a813c77287f6">
-		<h4>
-			test1
-		</h4>
-		<div class="description">
-			test1 !!
-		</div>
-	</a>
-
-	<div class="tags">
-		<a href="/env/java/oracle-jdk8">
-			<span class="tag tag-mini tag-special">
-				&gt; oracle-jdk8
-			</span>
-		</a>
-	
-		<a href="/tag/test">
-			<span class="tag tag-mini">
-				# test
-			</span>
-		</a>
-		<a href="/tag/java">
-			<span class="tag tag-mini">
-				# java
-			</span>
-		</a>
-	</div>
-
-	<ul class="properties">
-				<li>
-	<span class="key">match</span>
-	<span class="value">(.*)</span>
-</li>
-
-				<li>
-	<span class="key">replace</span>
-	<span class="value">$1</span>
-</li>
-
-	</ul>
-
-	<div class="last clearfix">
-		<div class="author fl">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
-			<span class="author-name">Youngsoo Lee</span>
-		</div>
-		<div class="created fr">
-			2016-09-28 10:09:11
-		</div>
-	</div>
-</div>
-</li>
-				</ul>
-				
-				<div class="footer">
-					<a href="/env/java" class="show-more">show more</a>
-				</div>
-
-			</section>
-		</div>
-	</div>
-</section>
-
-
-<section id="environments">
-	<h2 class="ctr">Environment Supports</h2>
-
-	<div class="description">
-		You can test regular expression in various environments.<br>
-		Each environment is enclosed with docker.
-	</div>
-
-	<ul class="clearfix">
-		<li>
-			<i class="devicon-java-plain-wordmark"></i>
-		</li>
-		<li>
-			<i class="devicon-python-plain-wordmark"></i>
-		</li>
-		<li>
-			<i class="devicon-apache-line-wordmark"></i>
-		</li>
-		<li class="with-text">
-			<i class="devicon-apache-plain"></i>
-			<span>flume</span>
-		</li>
-		<li>
-			<i class="devicon-nginx-original"></i>
-		</li>
-	</ul>
-
-</section>
 
 	</div>
 
