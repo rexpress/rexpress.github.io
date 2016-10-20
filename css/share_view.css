@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+html, body{ background-color: #f3f3f3; }
+
+
+#content{
+	margin-bottom: 40px;
+}
+
+section#meta {
+	background-color: white;
+	padding: 20px 0;
+}
+
+section#meta > div{ padding: 0 40px; }
+
+section#meta .first{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+section#meta .first h2{
+	margin: 0 0 10px 0;
+	color: #123765;
+	font-weight: 600;
+	font-size: 30px;
+	vertical-align: middle;
+}
+section#meta .first .sub{
+	vertical-align: middle;
+}
+
+section#meta .first .sub .profile{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	vertical-align: bottom;
+}
+
+section#meta .first .sub .author-name{ color: #555; font-weight: 600; }
+section#meta .first .sub .datetime{ color: #999; font-size: 13px }
+
+
+section#meta .second{
+	padding-top: 10px;
+}
+
+section#meta .second #description{
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+
+section#meta .second .tags .env-group{ color: #e3e3e3 }
+section#meta .second .tags .env-child{ color: white; font-weight: bold; }
+
+
+
+
+section h3{
+	margin: 35px 0 3px 40px;
+	color: #555;
+	font-size: 26px;
+	font-weight: 300;
+}
+
+section .content {
+	background-color: white;
+	padding: 20px 40px;
+	margin: 0;
+
+	color: #333;
+}
+
+
+
+section#properties .content{
+	padding: 20px 60px;
+}
+
+section#properties table{
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+
+section#properties table tr td{
+	margin: 0;
+	padding: 4px 0;
+}
+
+section#properties table tr td.key{
+	width: 100px;
+	text-align: right;
+	margin-right: 15px;
+	padding: 2px 15px 2px 2px;
+}
+
+section#properties table tr td.value{
+	width: 100%;
+}
+
+section#properties table tr td.value span{
+	background-color: #c6eaea;
+	padding: 2px 5px;
+}
+
+
+
+
+
+table.lines{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 15px;
+
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: white;
+}
+
+
+table.lines tr th{
+	text-align: center;
+	border-bottom: 2px solid #11b9b9;
+	background-color: #c6eaea;
+	color: #004848;
+	font-weight: bold;
+	padding: 4px 7px;
+}
+
+table.lines tr td{
+	margin: 0;
+	padding: 0;
+}
+
+table.lines tr td.space,
+table.lines tr th.space{ width: 100% }
+
+table.lines tr td.line-number{
+	width: 54px;
+	text-align: right;
+	border-right: 2px solid #11b9b9;
+	color: #777;
+}
+
+table.lines tr td.line-number > div{ width: 40px }
+table.lines tr td > div{ padding: 4px 7px }
+
+
+table.lines tr td.data > div.e,
+table.lines tr td.line-number > div.o{ background-color: #f6fafd }
+table.lines tr td.line-number > div.e{ background-color: #efefef }
+
+
+table.lines tr td.group-data{ border-right: 1px solid #ddd }
+table.lines tr td.group-data > div{
+	min-width: 200px;
+	text-align: center;
+	padding: 4px 25px;
+}
+
+table.lines tr td.group-data-null > div{
+	color: #999;
+	font-style: italic;
+	text-align: center;
+}
+
+
+table.lines tr td span.m{ color: #005bce; font-style: italic; }
+table.lines tr td span.u{ color: #d83f00; font-style: italic; }
+
+

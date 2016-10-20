@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+#content > section.header h1 > i{ vertical-align: middle; }
+#content > section.header h1 > span{ vertical-align: top; }
+
+#content > section.header h1 a{
+	color: white;
+	text-decoration: none;
+}
+
+#content > section.header h1 .sub{
+	font-size: 32px;
+	color: #aaa;
+}
+#content > section.header h1 .sub a{ color: #aaa }
+
+
+#content .header .properties{
+	margin-top: 25px;
+	padding-top: 10px;
+	border-top: 1px solid #446380;
+}
+
+#content .header .properties h3{
+	margin: 0 0 14px 0;
+	padding: 0;
+	font-size: 25px;
+	font-weight: 300;
+	color: #eee;
+	text-align: center;
+}
+
+#content .header .properties ul{
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	color: #ddd;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+#content .header .properties ul li{ margin: 5px 0; }
+#content .header .properties ul li > div{ width: 50%; }
+#content .header .properties ul li > div.key{
+	text-align: right;
+	margin-left: -8px;
+}
+#content .header .properties ul li > div span{
+	display: inline-block;
+	*zoom: 1;
+}
+
+#content .header .properties ul li .key .name{
+	padding: 0 3px;
+	margin-right: 5px;
+	background-color: rgba(255,255,255,0.1);
+	color: white;
+}
+#content .header .properties ul li .key .type{ color: #828282 }
+/*#content .header .properties ul li .value span{ border-bottom: 1px solid #446380; }*/

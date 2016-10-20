@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+html,body{ background-color: #eee }
+
+#content section{
+	margin: 10px 0;
+}
+
+
+#content .header{
+	margin: 0 0 40px 0;
+	padding: 25px 0;
+	background-color: #264058;
+	color: #eee;
+}
+
+#content .header h1{
+	margin: 0;
+	padding: 10px 0;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+}
+
+#content .header h1 > div{ margin-top: -10px }
+#content .header h1 .gloomy{ color: #999 }
+
+
+#content .header .env-description{
+	text-align: center;
+	font-size: 16px;
+}
+
+.env-description p{
+	margin: 5px 0;
+}
+.env-description a{ color: #bbb; text-decoration: none; }
+.env-description a:hover{ text-decoration: underline; }
+
+
+
+.env-description p.author{
+	font-size: 14px;
+	color: #bbb;
+}
+
+.env-description p.docker{
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.env-description p.docker > span{ vertical-align: middle; }
+.env-description p.docker i{
+	font-size: 32px;
+	vertical-align: middle;
+}
+.env-description p.docker a{ color: #9fe7ff }
+
+
+
+
+#content .header .children{
+	padding: 20px 0 10px;
+	text-align: center;
+}
+
+#content .header .children > a{
+	color: white;
+	text-decoration: none;
+}
+
+#content .header .children > a > span{
+	margin: 0 3px;
+	padding: 5px 7px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
+#content .header .children > a:hover > span{ background-color: rgba(255, 255, 255, 0.3) }
+
+
+
+
+ul#lists{
+	padding: 10px 40px;
+	list-style: none;
+}
+
+ul#lists > li{
+	float: left;
+	width: 300px;
+	
+	margin-right: 20px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+ul#lists > li .tags{
+	margin: 20px 0;
+}
+
+
+.no-sharings{
+	text-align: center;
+	padding: 30px 0;
+	color: #333;
+	font-size: 25px;
+	font-weight: 300;
+}
