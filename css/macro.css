@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.share-tile {
+	padding: 13px 13px 8px;
+	background-color: white;
+	font-size: 14px;
+}
+
+.share-tile a{ text-decoration: none; }
+
+.share-tile h4{
+	margin: 0 0 3px;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+	transition: color 0.5s;
+}
+.share-tile .description{
+	color: #555;
+	line-height: 1.5em;
+	font-size: 15px;
+	transition: color 0.5s;
+}
+
+.share-tile a:hover h4{ color: #777 }
+.share-tile a:hover .description{ color: #999 }
+
+.share-tile .tags{ margin-top: 7px; }
+
+
+.share-tile ul.properties{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 16px;
+	font-size: 13px;
+}
+.share-tile ul.properties li{
+	margin: 10px 0;
+	padding: 0;
+}
+.share-tile ul.properties li span{
+	border-bottom: 1px solid #ccc;
+	padding: 2px 3px;
+}
+.share-tile ul.properties li span.key{
+	display: inline-block;
+	*zoom: 1;
+	width: 72px;
+	color: #444;
+}
+
+
+
+
+.share-tile .last{
+	padding-top: 3px;
+}
+
+.share-tile .last .author{
+	color: #555;
+	margin-top: 3px; 
+}
+.share-tile .last .author .profile{
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+}
+
+.share-tile .last .created{
+	font-size: 12px;
+	color: #999;
+	margin-top: 5px;
+}
+

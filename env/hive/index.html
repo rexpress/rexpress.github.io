@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>	Apache Hive - regular.express
+</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<!-- <meta name="viewport" content="width=1024"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/macro.css">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<header class="clearfix">
+		<div id="logo" class="fl">
+			<a href="/">
+				<div id="logo-content">
+					<span class="hidden2">regular.express</span>
+				</div>
+			</a>
+		</div>
+
+		<ul id="gnb" class="fl clearfix">
+			<li>
+				<a href="/">HOME</a>
+			</li>
+			<li>
+				<a href="/doc">DOCUMENTATION</a>
+			</li>
+			<li>
+				<a href="/env">ENVIRONMENTS</a>
+			</li>
+		</ul>
+	</header>
+	
+	<div id="content">
+	<section class="header">
+		<h1>
+			<i class="devicon-apache-plain"></i>
+			<div>Apache Hive</div>
+		</h1>
+
+		<div class="env-description">
+			<p>Apache Hive is a data warehouse infrastructure built on top of Hadoop for providing data summarization, query, and analysis.</p>
+			<p>
+				<a href="https://hive.apache.org/">https://hive.apache.org/</a>
+			</p>
+		</div>
+
+		<div class="children clearfix">
+				<a href="/env/hive/hive2.10-serde">
+					<span class="tag">hive2.10-serde</span>
+				</a>
+		</div>
+	</section>
+
+		<h2 class="ctr">Sharings</h2>
+	<section id="share-list">
+			<ul id="list" class="clearfix">
+				<li><div class="share-tile">
+	<a href="/share/853da67c4acd07ba9e1abfa5a50029e6">
+		<h4>
+			Hive2 example sharing
+		</h4>
+		<div class="description">
+			Hive2 example share
+		</div>
+	</a>
+
+	<div class="tags">
+		<a href="/env/hive/hive2.10-serde">
+			<span class="tag tag-mini tag-special">
+				&gt; hive2.10-serde
+			</span>
+		</a>
+	
+		<a href="/tag/test">
+			<span class="tag tag-mini">
+				# test
+			</span>
+		</a>
+	</div>
+
+	<ul class="properties">
+				<li>
+	<span class="key">input.regex</span>
+	<span class="value">([a-zA-Z]*) ([a-zA-Z]*) ([a-z...</span>
+</li>
+
+				<li>
+	<span class="key">columns</span>
+	<span class="value">A,B,C</span>
+</li>
+
+				<li>
+	<span class="key">columns.t...</span>
+	<span class="value">STRING,STRING,STRING</span>
+</li>
+
+				<li>
+	<span class="key">input.reg...</span>
+	<span class="value">False</span>
+</li>
+
+
+	</ul>
+
+	<div class="last clearfix">
+		<div class="author fl">
+			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
+			<span class="author-name">Youngsoo Lee</span>
+		</div>
+		<div class="created fr">
+			2016-10-17 16:15:11
+		</div>
+	</div>
+</div>
+</li>
+			</ul>
+
+
+		<div class="dynamic-container clearfix"></div>
+	</section>
+
+	<script type="text/javascript">
+		(function() {
+			var cnt;
+			var dcont;
+			var tops = [];
+
+			function getMinTopIdx() {
+				var idx = 0;
+				var data = Infinity;
+
+				for (var i = 0; i < cnt; i++) {
+					if (data > tops[i]) {
+						idx = i;
+						data = tops[i];
+					}
+				}
+				return idx;
+			}
+
+			function __run() {
+				cnt = Math.max(1, Math.floor(
+					$('#list').width() / $('#list li').outerWidth()
+				));
+				dcont = $('#share-list .dynamic-container');
+				tops = [];
+
+				for (var i = 0; i < cnt; i++) {
+					tops.push(0);
+					dcont.append('<ul></ul>');
+				}
+
+				var lis = $('#list > li');
+
+				for (var i = 0; i < lis.length; i++) {
+					var idx = getMinTopIdx();
+					var e = lis.eq(i);
+
+					dcont.children().eq(idx).append( e );
+					tops[idx] += e.height();
+				}
+
+				$('#list').hide();
+
+				// set margin to dynamic container using rest space
+				var margin = dcont.width() - dcont.children().outerWidth(true) * cnt;
+				dcont.css('margin', '0 ' + margin / 2 + 'px');
+			}
+		})();
+
+	</script>
+
+
+	</div>
+
+	<footer>
+		Copyright &copy; 2016 regular.express All rights reserved.<br>
+	</footer>
+</body>
+</html>
