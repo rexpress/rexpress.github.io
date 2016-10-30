@@ -41,10 +41,10 @@
 				<a href="/">HOME</a>
 			</li>
 			<li>
-				<a href="/doc">DOCUMENTATION</a>
+				<a href="/env">ENVIRONMENTS</a>
 			</li>
 			<li>
-				<a href="/env">ENVIRONMENTS</a>
+				<a href="/doc">DOCUMENTATION</a>
 			</li>
 		</ul>
 	</header>
@@ -142,7 +142,7 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 
 			function __run() {
 				cnt = Math.max(1, Math.floor(
-					$('#list').width() / $('#list li').outerWidth()
+					$('#list').width() / ($('#list li').outerWidth() + 30)
 				));
 				dcont = $('#share-list .dynamic-container');
 				tops = [];
@@ -168,6 +168,8 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 				var margin = dcont.width() - dcont.children().outerWidth(true) * cnt;
 				dcont.css('margin', '0 ' + margin / 2 + 'px');
 			}
+
+			__run();
 		})();
 
 	</script>

@@ -44,10 +44,10 @@
 				<a href="/">HOME</a>
 			</li>
 			<li>
-				<a href="/doc">DOCUMENTATION</a>
+				<a href="/env">ENVIRONMENTS</a>
 			</li>
 			<li>
-				<a href="/env">ENVIRONMENTS</a>
+				<a href="/doc">DOCUMENTATION</a>
 			</li>
 		</ul>
 	</header>
@@ -132,7 +132,7 @@
 
 			function __run() {
 				cnt = Math.max(1, Math.floor(
-					$('#list').width() / $('#list li').outerWidth()
+					$('#list').width() / ($('#list li').outerWidth() + 30)
 				));
 				dcont = $('#share-list .dynamic-container');
 				tops = [];
@@ -158,6 +158,8 @@
 				var margin = dcont.width() - dcont.children().outerWidth(true) * cnt;
 				dcont.css('margin', '0 ' + margin / 2 + 'px');
 			}
+
+			__run();
 		})();
 
 	</script>

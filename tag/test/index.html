@@ -41,10 +41,10 @@
 				<a href="/">HOME</a>
 			</li>
 			<li>
-				<a href="/doc">DOCUMENTATION</a>
+				<a href="/env">ENVIRONMENTS</a>
 			</li>
 			<li>
-				<a href="/env">ENVIRONMENTS</a>
+				<a href="/doc">DOCUMENTATION</a>
 			</li>
 		</ul>
 	</header>
@@ -60,6 +60,65 @@
 		<h2 class="ctr">Sharings</h2>
 	<section id="share-list">
 			<ul id="list" class="clearfix">
+				<li><div class="share-tile">
+	<a href="/share/882fba24eced5e522f6d3c87071e0c9f">
+		<h4>
+			GoGOGOGOGOGOGO
+		</h4>
+		<div class="description">
+			Regular Test Desc
+		</div>
+	</a>
+
+	<div class="tags">
+		<a href="/env/hive/hive2.10-serde">
+			<span class="tag tag-mini tag-special">
+				&gt; hive2.10-serde
+			</span>
+		</a>
+	
+		<a href="/tag/test">
+			<span class="tag tag-mini">
+				# test
+			</span>
+		</a>
+	</div>
+
+	<ul class="properties">
+				<li>
+	<span class="key">input.regex</span>
+	<span class="value">(0[0-9]{2})-([0-9]{3,4})-([0-...</span>
+</li>
+
+				<li>
+	<span class="key">columns</span>
+	<span class="value">A,B,C</span>
+</li>
+
+				<li>
+	<span class="key">columns.t...</span>
+	<span class="value">STRING,STRING,STRING</span>
+</li>
+
+				<li>
+	<span class="key">input.reg...</span>
+	<span class="value">False</span>
+</li>
+
+
+	</ul>
+
+	<div class="last clearfix">
+		<div class="author fl">
+			<img class="profile" src="https://avatars.githubusercontent.com/u/22958708?size=25">
+			<span class="author-name">Tester</span>
+		</div>
+		<div class="created fr">
+			2016-10-24 18:09:59
+		</div>
+	</div>
+</div>
+</li>
 				<li><div class="share-tile">
 	<a href="/share/853da67c4acd07ba9e1abfa5a50029e6">
 		<h4>
@@ -204,13 +263,13 @@
 
 	<ul class="properties">
 				<li>
-	<span class="key">replace</span>
-	<span class="value">$1</span>
+	<span class="key">match</span>
+	<span class="value">(.*)</span>
 </li>
 
 				<li>
-	<span class="key">match</span>
-	<span class="value">(.*)</span>
+	<span class="key">replace</span>
+	<span class="value">$1</span>
 </li>
 
 	</ul>
@@ -308,7 +367,7 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 
 			function __run() {
 				cnt = Math.max(1, Math.floor(
-					$('#list').width() / $('#list li').outerWidth()
+					$('#list').width() / ($('#list li').outerWidth() + 30)
 				));
 				dcont = $('#share-list .dynamic-container');
 				tops = [];
@@ -334,6 +393,8 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 				var margin = dcont.width() - dcont.children().outerWidth(true) * cnt;
 				dcont.css('margin', '0 ' + margin / 2 + 'px');
 			}
+
+			__run();
 		})();
 
 	</script>
