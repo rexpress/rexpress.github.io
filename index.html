@@ -43,16 +43,21 @@
 			</a>
 		</div>
 
+
+
 		<ul id="gnb" class="fl clearfix">
 			<li>
-				<a href="/">HOME</a>
-			</li>
+			<a href="/" class="selected">HOME</a>
+		</li>
+
 			<li>
-				<a href="/env">ENVIRONMENTS</a>
-			</li>
+			<a href="/env">ENVIRONMENTS</a>
+		</li>
+
 			<li>
-				<a href="/doc">DOCUMENTATION</a>
-			</li>
+			<a href="/doc">DOCUMENTATION</a>
+		</li>
+
 		</ul>
 	</header>
 	
@@ -60,8 +65,10 @@
 
 <section id="search">
 	<div id="search-bar">
-		<i class="fa fa-search" aria-hidden="true"></i>
-		<input type="text" name="search" placeholder="Search regular.express">
+		<form name="fsearch" action="/search" method="GET">
+			<i class="fa fa-search" aria-hidden="true" onclick="if (fsearch.q.value) fsearch.submit()"></i>
+			<input type="text" name="q" placeholder="Search regular.express">
+		</form>
 	</div>
 
 	<div class="tags">
@@ -410,13 +417,13 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 
 	<ul class="properties">
 				<li>
-	<span class="key">match</span>
-	<span class="value">(.*)</span>
+	<span class="key">replace</span>
+	<span class="value">$1</span>
 </li>
 
 				<li>
-	<span class="key">replace</span>
-	<span class="value">$1</span>
+	<span class="key">match</span>
+	<span class="value">(.*)</span>
 </li>
 
 	</ul>

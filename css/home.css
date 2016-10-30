@@ -11,52 +11,6 @@ section > .description{
 
 
 /*
- * search section 
- *
- */
-section#search{
-	padding: 60px 0 50px;
-	background-color: #123765;
-}
-
-section#search #search-bar{
-	width: 500px;
-	margin: 0 auto;
-	padding: 8px 5px;
-	border-bottom: 1px solid white;
-}
-
-section#search #search-bar input{
-	width: 400px;
-	border: none;
-	outline: none;
-	font-size: 18px;
-	margin-left: 10px;
-
-	background-color: transparent;
-	color: white;
-	font-weight: 300;
-}
-
-section#search #search-bar i.fa{
-	float: left;
-	color: white;
-	padding: 4px 0;
-	cursor: pointer;
-}
-
-
-section#search .tags{
-	margin-top: 8px;
-	text-align: center;
-}
-section#search .tags .tag{
-	font-size: 12px;
-	color: white;
-}
-
-
-/*
  * news section 
  *
  */
