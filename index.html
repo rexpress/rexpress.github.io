@@ -414,13 +414,13 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 
 	<ul class="properties">
 				<li>
-	<span class="key">match</span>
-	<span class="value">(.*)</span>
+	<span class="key">replace</span>
+	<span class="value">$1</span>
 </li>
 
 				<li>
-	<span class="key">replace</span>
-	<span class="value">$1</span>
+	<span class="key">match</span>
+	<span class="value">(.*)</span>
 </li>
 
 	</ul>
@@ -501,7 +501,7 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 
 	<div class="description">
 		You can test regular expression in various environments.<br>
-		Each environment is enclosed with docker.
+		Each environment is running in docker.
 	</div>
 
 	<ul class="clearfix">
@@ -528,7 +528,11 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 	</div>
 
 	<footer>
-		Copyright &copy; 2016 regular.express All rights reserved.<br>
+		<span class="copy">&copy; 2016 regular.express</span>
+		
+		<a href="/terms">Terms &amp; Service</a>
+		<a href="https://github.com/rexpress">Github</a>
+		<!-- <a href="https://hub.docker.com/r/regexpress">DockerHub</a> -->
 	</footer>
 </body>
 </html>

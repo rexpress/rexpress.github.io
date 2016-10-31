@@ -10,6 +10,26 @@
 
 
 	<url>
+		<loc>http://regular.express/env/flume/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/env/java/</loc>
 		<priority>0.4</priority>
 	</url>
@@ -31,18 +51,6 @@
 	</url>
 	<url>
 		<loc>http://regular.express/env/python/python3.5-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>

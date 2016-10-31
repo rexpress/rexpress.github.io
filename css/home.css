@@ -197,8 +197,10 @@ section#environments ul li{
 section#environments ul li.with-text{ font-size: 23px; padding-top: 27px; }
 
 footer{
-	background-color: #333;
+	background-color: #292929;
+	color: #aaa;
 }
+footer a{ color: #6883a7 }
 
 
 
