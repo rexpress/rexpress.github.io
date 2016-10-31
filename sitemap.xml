@@ -10,6 +10,22 @@
 
 
 	<url>
+		<loc>http://regular.express/env/java/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8_group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8_replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8_match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/env/python/</loc>
 		<priority>0.4</priority>
 	</url>
@@ -22,27 +38,11 @@
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8_match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8_replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8_group/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>

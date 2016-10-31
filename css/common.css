@@ -126,11 +126,11 @@ footer{
 	padding: 2px 7px;
 	margin-right: 4px;
 	font-size: 12px;
+	outline: none;
 
 	transition: background-color 0.5s;
 }
 .tag:hover{ background-color: #999 }
-
 
 .tag-mini{
 	font-size: 11px;
