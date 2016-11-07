@@ -39,7 +39,7 @@
 	font-size: 15px;
 }
 
-#content .header .properties ul li{ margin: 5px 0; }
+#content .header .properties ul li{ margin: 6px 0; }
 #content .header .properties ul li > div{ width: 50%; }
 #content .header .properties ul li > div.key{
 	text-align: right;
@@ -48,15 +48,21 @@
 #content .header .properties ul li > div span{
 	display: inline-block;
 	*zoom: 1;
+	vertical-align: middle;
 }
 
+#content .header .properties ul li .key .required{ color: #ffb49b; font-weight: bold; }
+
 #content .header .properties ul li .key .name{
-	padding: 0 3px;
+	padding: 0 5px;
 	margin-right: 5px;
 	background-color: rgba(255,255,255,0.1);
 	color: white;
 }
-#content .header .properties ul li .key .type{ color: #828282 }
+#content .header .properties ul li .key .type{
+	color: #828282;
+	font-size: 12px;
+}
 /*#content .header .properties ul li .value span{ border-bottom: 1px solid #446380; }*/
 
 

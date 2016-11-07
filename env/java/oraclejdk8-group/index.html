@@ -2,7 +2,7 @@
 <html>
 <head>
 		
-	<title>Hive 2 Regex SerDe - Environment</title>
+	<title>Oracle Java 8 Regex Group - Environment</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,10 +12,10 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="Hive 2 Regex SerDe environment">
-	<meta name="Description" content="Hive 2 Regex SerDe environment in regular.express"> 
-	<meta name="Classification" content="environments/hive">
-	<meta property="og:description" content="Hive 2 Regex SerDe environment in regular.express">
+	<meta name="Subject" content="Oracle Java 8 Regex Group environment">
+	<meta name="Description" content="Oracle Java 8 Regex Group environment in regular.express"> 
+	<meta name="Classification" content="environments/java">
+	<meta property="og:description" content="Oracle Java 8 Regex Group environment in regular.express">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -65,22 +65,22 @@
 	<div id="content">
 	<section class="header env-child">
 		<h1>
-			<i class="devicon-apache-plain"></i>
+			<i class="devicon-java-plain"></i>
 			<span class="sub">
-				<a href="/env/hive">hive &gt;</a>
+				<a href="/env/java">java &gt;</a>
 			</span>
-			<span>Hive 2 Regex SerDe</span>
+			<span>Oracle Java 8 Regex Group</span>
 		</h1>
 
 		<div class="env-description">
-			<p>Testing hive 2.10 regex serde</p>
+			<p>Testing oracle java 8 regular expression for capturing group.</p>
 			<p class="author">author @regular.express</p>
 
 			<p class="docker">
 				<i class="devicon-docker-plain"></i>
 				<span>Image on</span>
 				<span>
-					<a href="https://hub.docker.com/r/regexpress/hive">regexpress/hive</a>
+					<a href="https://hub.docker.com/r/regexpress/java">regexpress/java</a>
 					
 				</span>
 			</p>
@@ -92,7 +92,7 @@
 				<li class="clearfix">
 					<div class="fl key">
 <span class="required">*</span>						<span class="type">string</span>
-						<span class="name">input.regex</span>
+						<span class="name">regex</span>
 					</div>
 					<div class="fl value">
 						<span>Regex string.</span>
@@ -100,29 +100,84 @@
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
-<span class="required">*</span>						<span class="type">string</span>
-						<span class="name">columns</span>
+						<span class="type">boolean</span>
+						<span class="name">CANON_EQ</span>
 					</div>
 					<div class="fl value">
-						<span>Whitepsace seperated column list.</span>
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="fl key">
-<span class="required">*</span>						<span class="type">string</span>
-						<span class="name">columns.types</span>
-					</div>
-					<div class="fl value">
-						<span>Comma seperated column type list.</span>
+						<span>Force canonical equivalence</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">input.regex.case.insensitive</span>
+						<span class="name">CASE_INSENSITIVE</span>
 					</div>
 					<div class="fl value">
-						<span>Determine regex case insensitive.</span>
+						<span>Case insensitive</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">COMMENTS</span>
+					</div>
+					<div class="fl value">
+						<span>Allow comments in regex</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">DOTALL</span>
+					</div>
+					<div class="fl value">
+						<span>Dot matches line terminator</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">LITERAL</span>
+					</div>
+					<div class="fl value">
+						<span>Treat as a sequence of literal characters</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">MULTILINE</span>
+					</div>
+					<div class="fl value">
+						<span>^ and $ match EOL</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">UNICODE_CASE</span>
+					</div>
+					<div class="fl value">
+						<span>Unicode case matching</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">UNIX_LINES</span>
+					</div>
+					<div class="fl value">
+						<span>Only consider &#39;
+&#39; as line terminator</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">UNICODE_CHARACTER_CLASS</span>
+					</div>
+					<div class="fl value">
+						<span>Enables the Unicode version of Predefined character classes and * POSIX character classes</span>
 					</div>
 				</li>
 			</ul>
@@ -132,68 +187,9 @@
 
 		<h2 class="ctr">Sharings</h2>
 	<section id="share-list">
-			<ul id="list" class="clearfix">
-				<li><div class="share-tile">
-	<a href="/share/853da67c4acd07ba9e1abfa5a50029e6">
-		<h4>
-			Hive2 example sharing
-		</h4>
-		<div class="description">
-			Hive2 example share
-		</div>
-	</a>
-
-	<div class="tags">
-		<a href="/env/hive/hive2.10-serde">
-			<span class="tag tag-mini tag-special">
-				&gt; hive2.10-serde
-			</span>
-		</a>
-	
-		<a href="/tag/test">
-			<span class="tag tag-mini">
-				# test
-			</span>
-		</a>
-	</div>
-
-	<ul class="properties">
-				<li>
-	<span class="key">input.regex</span>
-	<span class="value">([a-zA-Z]*) ([a-zA-Z]*) ([a-z...</span>
-</li>
-
-				<li>
-	<span class="key">columns</span>
-	<span class="value">A,B,C</span>
-</li>
-
-				<li>
-	<span class="key">columns.t...</span>
-	<span class="value">STRING,STRING,STRING</span>
-</li>
-
-				<li>
-	<span class="key">input.reg...</span>
-	<span class="value">False</span>
-</li>
-
-
-	</ul>
-
-	<div class="last clearfix">
-		<div class="author fl">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
-			<span class="author-name">Youngsoo Lee</span>
-		</div>
-		<div class="created fr">
-			2016-10-17 16:15:11
-		</div>
-	</div>
-</div>
-</li>
-			</ul>
-
+			<div class="no-sharings">
+				- No sharings yet -
+			</div>
 
 		<div class="dynamic-container clearfix"></div>
 	</section>

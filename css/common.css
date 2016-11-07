@@ -105,7 +105,9 @@ header ul#gnb li a{
 	text-decoration: none;
 	font-size: 14px;
 	color: #bbb;
+	transition: color 0.3s;
 }
+header ul#gnb li a:hover,
 header ul#gnb li a.selected{ color: white; }
 
 
