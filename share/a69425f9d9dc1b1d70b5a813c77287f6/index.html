@@ -14,7 +14,7 @@
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
 	<meta name="Subject" content="test1">
 	<meta name="Description" content="test1 !!"> 
-	<meta name="Classification" content="oracle-jdk8">
+	<meta name="Classification" content="oraclejdk8_group">
 	<meta property="og:description" content="test1 !!">
 
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -81,8 +81,8 @@
 				<a href="/env/java">
 					<span class="env-group">java&gt;</span>
 				</a>
-				<a href="/env/java/oracle-jdk8">
-					<span class="env-child">oracle-jdk8</span>
+				<a href="/env/java/oraclejdk8_group">
+					<span class="env-child">oraclejdk8_group</span>
 				</a>
 			</span>
 
@@ -109,17 +109,66 @@
 		<table>
 			<tbody>
 					<tr>
-						<td class="key">replace</td>
+						<td class="key">regex</td>
 						<td class="value">
-							<span>$1</span>
+							<span>([0-9]+)</span>
 						</td>
 					</tr>
-					<tr>
-						<td class="key">match</td>
+					<tr class="no-value">
+						<td class="key">CANON_EQ</td>
 						<td class="value">
-							<span>(.*)</span>
+							<span></span>
 						</td>
 					</tr>
+					<tr class="no-value">
+						<td class="key">CASE_INSENSITIVE</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">COMMENTS</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">DOTALL</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">LITERAL</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">MULTILINE</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">UNICODE_CASE</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">UNIX_LINES</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">UNICODE_CHARACTER_CLASS</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+
 			</tbody>
 		</table>
 	</div>
@@ -135,9 +184,15 @@
 			<tr>
 				<td class="line-number">
 					<div class="o">1</div>
+					<div class="e">2</div>
+					<div class="o">3</div>
+					<div class="e">4</div>
 				</td>
 				<td class="data">
-					<div class="o">asddasd</div>
+					<div class="o">010-123-456</div>
+					<div class="e">111-222-333</div>
+					<div class="o">xx-aa-xx</div>
+					<div class="e">444-555-666</div>
 				</td>
 			</tr>
 		</tbody>
@@ -147,21 +202,176 @@
 <section id="output">
 	<h3>output</h3>
 	<table class="lines">
-		<!-- STRING or MATCH type -->
-		<tbody>
+		<!-- GROUP type -->
+		<thead>
 			<tr>
-				<td class="line-number">
-					<div class="o">1</div>
-				</td>
-				<td class="data">
-					<div class="o">
-							asddasd
-
-
-					</div>
-				</td>
+				<th></th>
+				<th></th>
+					<th>Group #1</th>
+					<th>Group #1</th>
+					<th>Group #1</th>
+				<th class="space">&nbsp;</th>
 			</tr>
-		</tbody>
+		</thead>
+		<tbody>
+
+
+
+					<tr>
+							<td class="line-number g1 o" rowspan="3">
+								<div>1</div>
+							</td>
+
+						<td class="line-number g2 o">
+							<div>1</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="o">010</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+					<tr>
+
+						<td class="line-number g2 e">
+							<div>2</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="e">123</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+					<tr class="l">
+
+						<td class="line-number g2 o">
+							<div>3</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="o">456</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+
+					<tr>
+							<td class="line-number g1 e" rowspan="3">
+								<div>2</div>
+							</td>
+
+						<td class="line-number g2 e">
+							<div>1</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="e">111</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+					<tr>
+
+						<td class="line-number g2 o">
+							<div>2</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="o">222</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+					<tr class="l">
+
+						<td class="line-number g2 e">
+							<div>3</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="e">333</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+
+					<tr class="l">
+							<td class="line-number g1 o" rowspan="1">
+								<div>3</div>
+							</td>
+
+						<td class="line-number g2 o">
+							<div>1</div>
+						</td>
+
+							<td class="data group-data-null" colspan="3">
+								<div class="o">Null</div>
+							</td>
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+
+					<tr>
+							<td class="line-number g1 e" rowspan="3">
+								<div>4</div>
+							</td>
+
+						<td class="line-number g2 e">
+							<div>1</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="e">444</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+					<tr>
+
+						<td class="line-number g2 o">
+							<div>2</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="o">555</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+					<tr class="l">
+
+						<td class="line-number g2 e">
+							<div>3</div>
+						</td>
+
+							<td class="data group-data">
+								<div class="e">666</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+
 		
 	</table>
 </section>

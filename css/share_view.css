@@ -84,7 +84,10 @@ section#properties table{
 	border: none;
 	outline: none;
 }
-
+section#properties table tr.no-value{
+	color: #999;
+	font-style: italic;
+}
 
 section#properties table tr td{
 	margin: 0;
@@ -106,7 +109,7 @@ section#properties table tr td.value span{
 	background-color: #c6eaea;
 	padding: 2px 5px;
 }
-
+section#properties table tr.no-value td.value span{ background-color: #e0e0e0; padding: 2px 2px; }
 
 
 
@@ -147,13 +150,22 @@ table.lines tr td.line-number{
 	color: #777;
 }
 
+table.lines tr td.line-number.g1{
+	border-right: 1px solid #11b9b9;
+	vertical-align: top;
+}
+
 table.lines tr td.line-number > div{ width: 40px }
 table.lines tr td > div{ padding: 4px 7px }
 
 
 table.lines tr td.data > div.e,
-table.lines tr td.line-number > div.o{ background-color: #f6fafd }
-table.lines tr td.line-number > div.e{ background-color: #efefef }
+table.lines tr td.line-number.o{ background-color: #f6fafd }
+
+table.lines tr td.line-number.e{ background-color: #efefef }
+table.lines tr td.line-number.g2.e{ background-color: white }
+
+table.lines tr.l{ border-bottom: 1px solid #eee }
 
 
 table.lines tr td.group-data{ border-right: 1px solid #ddd }

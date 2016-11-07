@@ -2,7 +2,7 @@
 <html>
 <head>
 		
-	<title>Hive 2 Regex SerDe - Environment</title>
+	<title>Python3 regex replace - Environment</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,10 +12,10 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="Hive 2 Regex SerDe environment">
-	<meta name="Description" content="Hive 2 Regex SerDe environment in regular.express"> 
-	<meta name="Classification" content="environments/hive">
-	<meta property="og:description" content="Hive 2 Regex SerDe environment in regular.express">
+	<meta name="Subject" content="Python3 regex replace environment">
+	<meta name="Description" content="Python3 regex replace environment in regular.express"> 
+	<meta name="Classification" content="environments/python">
+	<meta property="og:description" content="Python3 regex replace environment in regular.express">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -65,22 +65,22 @@
 	<div id="content">
 	<section class="header env-child">
 		<h1>
-			<i class="devicon-apache-plain"></i>
+			<i class="devicon-python-plain"></i>
 			<span class="sub">
-				<a href="/env/hive">hive &gt;</a>
+				<a href="/env/python">python &gt;</a>
 			</span>
-			<span>Hive 2 Regex SerDe</span>
+			<span>Python3 regex replace</span>
 		</h1>
 
 		<div class="env-description">
-			<p>Testing hive 2.10 regex serde</p>
+			<p>Testing python3 regex replace</p>
 			<p class="author">author @regular.express</p>
 
 			<p class="docker">
 				<i class="devicon-docker-plain"></i>
 				<span>Image on</span>
 				<span>
-					<a href="https://hub.docker.com/r/regexpress/hive">regexpress/hive</a>
+					<a href="https://hub.docker.com/r/regexpress/python">regexpress/python</a>
 					
 				</span>
 			</p>
@@ -92,37 +92,73 @@
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">string</span>
-						<span class="name">input.regex</span>
+						<span class="name">regex</span>
 					</div>
 					<div class="fl value">
-						<span>Regex string.</span>
+						<span>Regular Expression.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">string</span>
-						<span class="name">columns</span>
+						<span class="name">replace</span>
 					</div>
 					<div class="fl value">
-						<span>Whitepsace seperated column list.</span>
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="fl key">
-						<span class="type">string</span>
-						<span class="name">columns.types</span>
-					</div>
-					<div class="fl value">
-						<span>Comma seperated column type list.</span>
+						<span>Replace string.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">input.regex.case.insensitive</span>
+						<span class="name">IGNORECASE</span>
 					</div>
 					<div class="fl value">
-						<span>Determine regex case insensitive.</span>
+						<span>Perform case-insensitive matching; expressions like [A-Z] will match lowercase letters, too.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">LOCALE</span>
+					</div>
+					<div class="fl value">
+						<span>Make \w, \W, \b, \B, \s and \S dependent on the current locale.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">MULTILINE</span>
+					</div>
+					<div class="fl value">
+						<span>When specified, the pattern character &#39;^&#39; matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character &#39;$&#39; matches at the end of the string and at the end of each line (immediately preceding each newline). By default, &#39;^&#39; matches only at the beginning of the string, and &#39;$&#39; only at the end of the string and immediately before the newline (if any) at the end of the string.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">DOTALL</span>
+					</div>
+					<div class="fl value">
+						<span>Make the &#39;.&#39; special character match any character at all, including a newline; without this flag, &#39;.&#39; will match anything except a newline.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">ASCII</span>
+					</div>
+					<div class="fl value">
+						<span>Make \w, \W, \b, \B, \d, \D, \s and \S perform ASCII-only matching instead of full Unicode matching.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">VERBOSE</span>
+					</div>
+					<div class="fl value">
+						<span>This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class or when preceded by an unescaped backslash. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored.</span>
 					</div>
 				</li>
 			</ul>
@@ -132,68 +168,9 @@
 
 		<h2 class="ctr">Sharings</h2>
 	<section id="share-list">
-			<ul id="list" class="clearfix">
-				<li><div class="share-tile">
-	<a href="/share/853da67c4acd07ba9e1abfa5a50029e6">
-		<h4>
-			Hive2 example sharing
-		</h4>
-		<div class="description">
-			Hive2 example share
-		</div>
-	</a>
-
-	<div class="tags">
-		<a href="/env/hive/hive2.10-serde">
-			<span class="tag tag-mini tag-special">
-				&gt; hive2.10-serde
-			</span>
-		</a>
-	
-		<a href="/tag/test">
-			<span class="tag tag-mini">
-				# test
-			</span>
-		</a>
-	</div>
-
-	<ul class="properties">
-				<li>
-	<span class="key">input.regex</span>
-	<span class="value">([a-zA-Z]*) ([a-zA-Z]*) ([a-z...</span>
-</li>
-
-				<li>
-	<span class="key">columns</span>
-	<span class="value">A,B,C</span>
-</li>
-
-				<li>
-	<span class="key">columns.t...</span>
-	<span class="value">STRING,STRING,STRING</span>
-</li>
-
-				<li>
-	<span class="key">input.reg...</span>
-	<span class="value">False</span>
-</li>
-
-
-	</ul>
-
-	<div class="last clearfix">
-		<div class="author fl">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
-			<span class="author-name">Youngsoo Lee</span>
-		</div>
-		<div class="created fr">
-			2016-10-17 16:15:11
-		</div>
-	</div>
-</div>
-</li>
-			</ul>
-
+			<div class="no-sharings">
+				- No sharings yet -
+			</div>
 
 		<div class="dynamic-container clearfix"></div>
 	</section>
