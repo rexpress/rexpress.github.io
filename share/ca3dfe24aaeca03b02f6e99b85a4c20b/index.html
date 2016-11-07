@@ -14,7 +14,7 @@
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
 	<meta name="Subject" content="phone number replace">
 	<meta name="Description" content="Testing simple regex. Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;"> 
-	<meta name="Classification" content="python3.5-replace">
+	<meta name="Classification" content="python3-replace">
 	<meta property="og:description" content="Testing simple regex. Replace...">
 
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -30,6 +30,19 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/css/share_view.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tooltip').tooltipster({
+				theme: 'tooltipster-light'
+			});
+		});
+	</script>
 </head>
 <body>
 	<header class="clearfix">
@@ -82,8 +95,8 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
 				<a href="/env/python">
 					<span class="env-group">python&gt;</span>
 				</a>
-				<a href="/env/python/python3.5-replace">
-					<span class="env-child">python3.5-replace</span>
+				<a href="/env/python/python3-replace">
+					<span class="env-child">python3-replace</span>
 				</a>
 			</span>
 
@@ -104,23 +117,84 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
 </section>
 
 <section id="properties">
-	<h3>properties</h3>
+	<h3><a href="/env/python/python3-replace">properties</a></h3>
 
 	<div class="content">
 		<table>
 			<tbody>
 					<tr>
-						<td class="key">replace</td>
-						<td class="value">
-							<span>$1$2$3</span>
+						<td class="key">
+							<span>regex</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regular Expression."></i>
 						</td>
-					</tr>
-					<tr>
-						<td class="key">match</td>
 						<td class="value">
 							<span>(0[0-9]{2})-([0-9]{3,4})-([0-9]{3,4})</span>
 						</td>
 					</tr>
+					<tr>
+						<td class="key">
+							<span>replace</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Replace string."></i>
+						</td>
+						<td class="value">
+							<span>$1$2$3</span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>IGNORECASE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Perform case-insensitive matching; expressions like [A-Z] will match lowercase letters, too."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>LOCALE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make \w, \W, \b, \B, \s and \S dependent on the current locale."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>MULTILINE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="When specified, the pattern character &#39;^&#39; matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character &#39;$&#39; matches at the end of the string and at the end of each line (immediately preceding each newline). By default, &#39;^&#39; matches only at the beginning of the string, and &#39;$&#39; only at the end of the string and immediately before the newline (if any) at the end of the string."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>DOTALL</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make the &#39;.&#39; special character match any character at all, including a newline; without this flag, &#39;.&#39; will match anything except a newline."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>ASCII</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make \w, \W, \b, \B, \d, \D, \s and \S perform ASCII-only matching instead of full Unicode matching."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="no-value">
+						<td class="key">
+							<span>VERBOSE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class or when preceded by an unescaped backslash. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+
 			</tbody>
 		</table>
 	</div>

@@ -30,6 +30,19 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/css/share_view.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tooltip').tooltipster({
+				theme: 'tooltipster-light'
+			});
+		});
+	</script>
 </head>
 <body>
 	<header class="clearfix">
@@ -97,31 +110,43 @@
 </section>
 
 <section id="properties">
-	<h3>properties</h3>
+	<h3><a href="/env/hive/hive2.10-serde">properties</a></h3>
 
 	<div class="content">
 		<table>
 			<tbody>
 					<tr>
-						<td class="key">input.regex</td>
+						<td class="key">
+							<span>input.regex</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regex string."></i>
+						</td>
 						<td class="value">
 							<span>([a-zA-Z]*) ([a-zA-Z]*) ([a-zA-Z]*)</span>
 						</td>
 					</tr>
 					<tr>
-						<td class="key">columns</td>
+						<td class="key">
+							<span>columns</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Whitepsace seperated column list."></i>
+						</td>
 						<td class="value">
 							<span>A,B,C</span>
 						</td>
 					</tr>
 					<tr>
-						<td class="key">columns.types</td>
+						<td class="key">
+							<span>columns.types</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Comma seperated column type list."></i>
+						</td>
 						<td class="value">
 							<span>STRING,STRING,STRING</span>
 						</td>
 					</tr>
 					<tr>
-						<td class="key">input.regex.case.insensitive</td>
+						<td class="key">
+							<span>input.regex.case.insensitive</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Determine regex case insensitive."></i>
+						</td>
 						<td class="value">
 							<span>False</span>
 						</td>
@@ -160,7 +185,7 @@
 		<thead>
 			<tr>
 				<th></th>
-				<th></th>
+				
 					<th>A</th>
 					<th>B</th>
 					<th>C</th>
@@ -173,13 +198,10 @@
 
 
 					<tr class="l">
-							<td class="line-number g1 e" rowspan="1">
+							<td class="line-number e" rowspan="1">
 								<div>2</div>
 							</td>
 
-						<td class="line-number g2 e">
-							<div>1</div>
-						</td>
 
 							<td class="data group-data-null" colspan="3">
 								<div class="e">Null</div>

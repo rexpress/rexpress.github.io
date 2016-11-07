@@ -30,6 +30,19 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/css/share_view.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tooltip').tooltipster({
+				theme: 'tooltipster-light'
+			});
+		});
+	</script>
 </head>
 <body>
 	<header class="clearfix">
@@ -103,67 +116,98 @@
 </section>
 
 <section id="properties">
-	<h3>properties</h3>
+	<h3><a href="/env/java/oraclejdk8_group">properties</a></h3>
 
 	<div class="content">
 		<table>
 			<tbody>
 					<tr>
-						<td class="key">regex</td>
+						<td class="key">
+							<span>regex</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regex string."></i>
+						</td>
 						<td class="value">
 							<span>([0-9]+)</span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">CANON_EQ</td>
+						<td class="key">
+							<span>CANON_EQ</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Force canonical equivalence"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">CASE_INSENSITIVE</td>
+						<td class="key">
+							<span>CASE_INSENSITIVE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Case insensitive"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">COMMENTS</td>
+						<td class="key">
+							<span>COMMENTS</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Allow comments in regex"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">DOTALL</td>
+						<td class="key">
+							<span>DOTALL</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Dot matches line terminator"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">LITERAL</td>
+						<td class="key">
+							<span>LITERAL</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Treat as a sequence of literal characters"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">MULTILINE</td>
+						<td class="key">
+							<span>MULTILINE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="^ and $ match EOL"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">UNICODE_CASE</td>
+						<td class="key">
+							<span>UNICODE_CASE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Unicode case matching"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">UNIX_LINES</td>
+						<td class="key">
+							<span>UNIX_LINES</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Only consider &#39;
+&#39; as line terminator"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
 					</tr>
 					<tr class="no-value">
-						<td class="key">UNICODE_CHARACTER_CLASS</td>
+						<td class="key">
+							<span>UNICODE_CHARACTER_CLASS</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Enables the Unicode version of Predefined character classes and * POSIX character classes"></i>
+						</td>
 						<td class="value">
 							<span></span>
 						</td>
@@ -206,9 +250,8 @@
 		<thead>
 			<tr>
 				<th></th>
-				<th></th>
-					<th>Group #1</th>
-					<th>Group #1</th>
+				
+					<th>Group #0</th>
 					<th>Group #1</th>
 				<th class="space">&nbsp;</th>
 			</tr>
@@ -218,14 +261,14 @@
 
 
 					<tr>
-							<td class="line-number g1 o" rowspan="3">
+							<td class="line-number o" rowspan="3">
 								<div>1</div>
 							</td>
 
-						<td class="line-number g2 o">
-							<div>1</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="o">010</div>
+							</td>
 							<td class="data group-data">
 								<div class="o">010</div>
 							</td>
@@ -236,10 +279,10 @@
 
 					<tr>
 
-						<td class="line-number g2 e">
-							<div>2</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="e">123</div>
+							</td>
 							<td class="data group-data">
 								<div class="e">123</div>
 							</td>
@@ -250,10 +293,10 @@
 
 					<tr class="l">
 
-						<td class="line-number g2 o">
-							<div>3</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="o">456</div>
+							</td>
 							<td class="data group-data">
 								<div class="o">456</div>
 							</td>
@@ -264,14 +307,14 @@
 
 
 					<tr>
-							<td class="line-number g1 e" rowspan="3">
+							<td class="line-number e" rowspan="3">
 								<div>2</div>
 							</td>
 
-						<td class="line-number g2 e">
-							<div>1</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="e">111</div>
+							</td>
 							<td class="data group-data">
 								<div class="e">111</div>
 							</td>
@@ -282,10 +325,10 @@
 
 					<tr>
 
-						<td class="line-number g2 o">
-							<div>2</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="o">222</div>
+							</td>
 							<td class="data group-data">
 								<div class="o">222</div>
 							</td>
@@ -296,10 +339,10 @@
 
 					<tr class="l">
 
-						<td class="line-number g2 e">
-							<div>3</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="e">333</div>
+							</td>
 							<td class="data group-data">
 								<div class="e">333</div>
 							</td>
@@ -310,15 +353,12 @@
 
 
 					<tr class="l">
-							<td class="line-number g1 o" rowspan="1">
+							<td class="line-number o" rowspan="1">
 								<div>3</div>
 							</td>
 
-						<td class="line-number g2 o">
-							<div>1</div>
-						</td>
 
-							<td class="data group-data-null" colspan="3">
+							<td class="data group-data-null" colspan="2">
 								<div class="o">Null</div>
 							</td>
 
@@ -327,14 +367,14 @@
 
 
 					<tr>
-							<td class="line-number g1 e" rowspan="3">
+							<td class="line-number e" rowspan="3">
 								<div>4</div>
 							</td>
 
-						<td class="line-number g2 e">
-							<div>1</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="e">444</div>
+							</td>
 							<td class="data group-data">
 								<div class="e">444</div>
 							</td>
@@ -345,10 +385,10 @@
 
 					<tr>
 
-						<td class="line-number g2 o">
-							<div>2</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="o">555</div>
+							</td>
 							<td class="data group-data">
 								<div class="o">555</div>
 							</td>
@@ -359,10 +399,10 @@
 
 					<tr class="l">
 
-						<td class="line-number g2 e">
-							<div>3</div>
-						</td>
 
+							<td class="data group-data">
+								<div class="e">666</div>
+							</td>
 							<td class="data group-data">
 								<div class="e">666</div>
 							</td>
