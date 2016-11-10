@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+		
+	<title>PHP (PCRE) regex replace - Environment</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<meta name="Robots" content="ALL">
+	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://regular.express/images/iconx400.png">
+	<meta name="Subject" content="PHP (PCRE) regex replace environment">
+	<meta name="Description" content="PHP (PCRE) regex replace environment in regular.express"> 
+	<meta name="Classification" content="environments/php">
+	<meta property="og:description" content="PHP (PCRE) regex replace environment in regular.express">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/macro.css">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/env_child.css">
+</head>
+<body>
+	<header class="clearfix">
+		<div id="logo" class="fl">
+			<a href="/">
+				<div id="logo-content">
+					<span class="hidden2">regular.express</span>
+				</div>
+			</a>
+		</div>
+
+
+
+		<ul id="gnb" class="fl clearfix">
+			<li>
+			<a href="/">HOME</a>
+		</li>
+
+			<li>
+			<a href="/env">ENVIRONMENTS</a>
+		</li>
+
+			<li>
+			<a href="/doc">DOCUMENTATION</a>
+		</li>
+
+		</ul>
+	</header>
+	
+	<div id="content">
+	<section class="header env-child">
+		<h1>
+			<i class="devicon-php-plain"></i>
+			<span class="sub">
+				<a href="/env/php">php &gt;</a>
+			</span>
+			<span>PHP (PCRE) regex replace</span>
+		</h1>
+
+		<div class="env-description">
+			<p>Testing PHP (PCRE) preg_replace function.</p>
+			<p class="author">author @regular.express</p>
+
+			<p class="docker">
+				<i class="devicon-docker-plain"></i>
+				<span>Image on</span>
+				<span>
+					<a href="https://hub.docker.com/r/regexpress/php">regexpress/php</a>
+					
+				</span>
+			</p>
+		</div>
+
+		<div class="properties">
+			<h3>properties</h3>
+			<ul>
+				<li class="clearfix">
+					<div class="fl key">
+<span class="required">*</span>						<span class="type">string</span>
+						<span class="name">regex</span>
+					</div>
+					<div class="fl value">
+						<span>Regular Expression. Don&#39;t add flags after regex.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">string</span>
+						<span class="name">replace</span>
+					</div>
+					<div class="fl value">
+						<span>Replace string.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_CASELESS</span>
+					</div>
+					<div class="fl value">
+						<span>If this modifier is set, letters in the pattern match both upper and lower case letters.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_MULTILINE</span>
+					</div>
+					<div class="fl value">
+						<span>By default, PCRE treats the subject string as consisting of a single &#34;line&#34; of characters (even if it actually contains several newlines). The &#34;start of line&#34; metacharacter (^) matches only at the start of the string, while the &#34;end of line&#34; metacharacter ($) matches only at the end of the string, or before a terminating newline (unless D modifier is set). This is the same as Perl. When this modifier is set, the &#34;start of line&#34; and &#34;end of line&#34; constructs match immediately following or immediately before any newline in the subject string, respectively, as well as at the very start and end. This is equivalent to Perl&#39;s /m modifier. If there are no &#34;
+&#34; characters in a subject string, or no occurrences of ^ or $ in a pattern, setting this modifier has no effect.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_DOTALL</span>
+					</div>
+					<div class="fl value">
+						<span>If this modifier is set, a dot metacharacter in the pattern matches all characters, including newlines. Without it, newlines are excluded. This modifier is equivalent to Perl&#39;s /s modifier. A negative class such as [^a] always matches a newline character, independent of the setting of this modifier.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_EXTENDED</span>
+					</div>
+					<div class="fl value">
+						<span>If this modifier is set, whitespace data characters in the pattern are totally ignored except when escaped or inside a character class, and characters between an unescaped # outside a character class and the next newline character, inclusive, are also ignored. This is equivalent to Perl&#39;s /x modifier, and makes it possible to include commentary inside complicated patterns. Note, however, that this applies only to data characters. Whitespace characters may never appear within special character sequences in a pattern, for example within the sequence (?( which introduces a conditional subpattern.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_ANCHORED</span>
+					</div>
+					<div class="fl value">
+						<span>If this modifier is set, the pattern is forced to be &#34;anchored&#34;, that is, it is constrained to match only at the start of the string which is being searched (the &#34;subject string&#34;). This effect can also be achieved by appropriate constructs in the pattern itself, which is the only way to do it in Perl.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_DOLLAR_ENDONLY</span>
+					</div>
+					<div class="fl value">
+						<span>If this modifier is set, a dollar metacharacter in the pattern matches only at the end of the subject string. Without this modifier, a dollar also matches immediately before the final character if it is a newline (but not before any other newlines). This modifier is ignored if m modifier is set. There is no equivalent to this modifier in Perl.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">S</span>
+					</div>
+					<div class="fl value">
+						<span>When a pattern is going to be used several times, it is worth spending more time analyzing it in order to speed up the time taken for matching. If this modifier is set, then this extra analysis is performed. At present, studying a pattern is useful only for non-anchored patterns that do not have a single fixed starting character.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_UNGREEDY</span>
+					</div>
+					<div class="fl value">
+						<span>This modifier inverts the &#34;greediness&#34; of the quantifiers so that they are not greedy by default, but become greedy if followed by ?. It is not compatible with Perl. It can also be set by a (?U) modifier setting within the pattern or by a question mark behind a quantifier (e.g. .*?).</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_EXTRA</span>
+					</div>
+					<div class="fl value">
+						<span>This modifier turns on additional functionality of PCRE that is incompatible with Perl. Any backslash in a pattern that is followed by a letter that has no special meaning causes an error, thus reserving these combinations for future expansion. By default, as in Perl, a backslash followed by a letter with no special meaning is treated as a literal. There are at present no other features controlled by this modifier.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_INFO_JCHANGED</span>
+					</div>
+					<div class="fl value">
+						<span>The (?J) internal option setting changes the local PCRE_DUPNAMES option. Allow duplicate names for subpatterns.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">PCRE_UTF8</span>
+					</div>
+					<div class="fl value">
+						<span>This modifier turns on additional functionality of PCRE that is incompatible with Perl. Pattern and subject strings are treated as UTF-8. This modifier is available from PHP 4.1.0 or greater on Unix and from PHP 4.2.3 on win32. UTF-8 validity of the pattern and the subject is checked since PHP 4.3.5. An invalid subject will cause the preg_* function to match nothing; an invalid pattern will trigger an error of level E_WARNING. Five and six octet UTF-8 sequences are regarded as invalid since PHP 5.3.4 (resp. PCRE 7.3 2007-08-28); formerly those have been regarded as valid UTF-8.</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+
+		<h2 class="ctr">Sharings</h2>
+	<section id="share-list">
+			<div class="no-sharings">
+				- No sharings yet -
+			</div>
+
+		<div class="dynamic-container clearfix"></div>
+	</section>
+
+	<script type="text/javascript">
+		(function() {
+			var cnt;
+			var dcont;
+			var tops = [];
+
+			function getMinTopIdx() {
+				var idx = 0;
+				var data = Infinity;
+
+				for (var i = 0; i < cnt; i++) {
+					if (data > tops[i]) {
+						idx = i;
+						data = tops[i];
+					}
+				}
+				return idx;
+			}
+
+			function __run() {
+				cnt = Math.max(1, Math.floor(
+					$('#list').width() / ($('#list li').outerWidth() + 30)
+				));
+				dcont = $('#share-list .dynamic-container');
+				tops = [];
+
+				for (var i = 0; i < cnt; i++) {
+					tops.push(0);
+					dcont.append('<ul></ul>');
+				}
+
+				var lis = $('#list > li');
+
+				for (var i = 0; i < lis.length; i++) {
+					var idx = getMinTopIdx();
+					var e = lis.eq(i);
+
+					dcont.children().eq(idx).append( e );
+					tops[idx] += e.height();
+				}
+
+				$('#list').hide();
+
+				// set margin to dynamic container using rest space
+				var margin = dcont.width() - dcont.children().outerWidth(true) * cnt;
+				dcont.css('margin', '0 ' + margin / 2 + 'px');
+			}
+
+			__run();
+		})();
+
+	</script>
+
+
+	</div>
+
+	<footer>
+		<span class="copy">&copy; 2016 regular.express</span>
+		
+		<a href="/terms">Terms &amp; Service</a>
+		<a href="https://github.com/rexpress">Github</a>
+		<!-- <a href="https://hub.docker.com/r/regexpress">DockerHub</a> -->
+	</footer>
+</body>
+</html>
