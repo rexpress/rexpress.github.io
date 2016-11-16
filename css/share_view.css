@@ -128,6 +128,7 @@ section#properties table tr td.value{
 section#properties table tr td.value span{
 	background-color: #c6eaea;
 	padding: 2px 5px;
+	white-space: pre;
 }
 section#properties table tr.no-value td.value span{ background-color: #e0e0e0; padding: 2px 2px; }
 
