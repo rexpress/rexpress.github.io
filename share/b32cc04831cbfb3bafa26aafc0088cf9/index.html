@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>phone number replace - regular.express</title>
+	<title>Nginx double rewrite test - regular.express</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,10 +12,10 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="phone number replace">
-	<meta name="Description" content="Testing simple regex. Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;"> 
-	<meta name="Classification" content="python3.4-replace">
-	<meta property="og:description" content="Testing simple regex. Replace...">
+	<meta name="Subject" content="Nginx double rewrite test">
+	<meta name="Description" content=""> 
+	<meta name="Classification" content="nginx1.10-rewrite">
+	<meta property="og:description" content="">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -75,65 +75,51 @@
 	<div id="content">
 <section id="meta">
 	<div class="first">
-		<h2>phone number replace</h2>
+		<h2>Nginx double rewrite test</h2>
 
 		<div class="sub">
 			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=44">
 			<span class="author-name">Youngsoo Lee</span>
 			<span class="datetime">
-				2016-11-14 09:54:02
+				2016-11-16 07:32:27
 			</span>
 		</div>
 	</div>
 
 	<div class="second">
-		<pre id="description">Testing simple regex.
-Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
+		<pre id="description"></pre>
 
 		<div class="tags">
 			<span class="tag tag-special">
-				<a href="/env/python">
-					<span class="env-group">python&gt;</span>
+				<a href="/env/nginx">
+					<span class="env-group">nginx&gt;</span>
 				</a>
-				<a href="/env/python/python3.4-replace">
-					<span class="env-child">python3.4-replace</span>
+				<a href="/env/nginx/nginx1.10-rewrite">
+					<span class="env-child">nginx1.10-rewrite</span>
 				</a>
 			</span>
 
-			<a href="/tag/test">
-				<span class="tag">
-					<span>#</span>
-					<span>test</span>
-				</span>
-			</a>
-			<a href="/tag/phone">
-				<span class="tag">
-					<span>#</span>
-					<span>phone</span>
-				</span>
-			</a>
 		</div>
 	</div>
 </section>
 
 <section id="properties">
-	<h3><a href="/env/python/python3.4-replace">properties</a></h3>
+	<h3><a href="/env/nginx/nginx1.10-rewrite">properties</a></h3>
 
 	<div class="content">
 		<table>
 			<tbody>
 					<tr>
-						<td class="key">replace</td>
+						<td class="key">
+							<span>config</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Nginx location config."></i>
+						</td>
 						<td class="value">
-							<span>$1$2$3</span>
+							<span>location ~ /a { rewrite ^ /b?var1=a; }
+location ~ /b { rewrite ^ /c?var2=b; }</span>
 						</td>
 					</tr>
-					<tr>
-						<td class="key">match</td>
-						<td class="value">
-							<span>(0[0-9]{2})-([0-9]{3,4})-([0-9]{3,4})</span>
-						</td>
-					</tr>
+
 			</tbody>
 		</table>
 	</div>
@@ -151,25 +137,11 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
 					<div class="o">1</div>
 					<div class="e">2</div>
 					<div class="o">3</div>
-					<div class="e">4</div>
-					<div class="o">5</div>
-					<div class="e">6</div>
-					<div class="o">7</div>
-					<div class="e">8</div>
-					<div class="o">9</div>
-					<div class="e">10</div>
 				</td>
 				<td class="data">
-					<div class="o">010-1234-4566</div>
-					<div class="e">011-123-445</div>
-					<div class="o">010-1234-4566</div>
-					<div class="e">011-323-4457</div>
-					<div class="o">010-1234-4566</div>
-					<div class="e">019-1423-4457</div>
-					<div class="o">010-1234-4566</div>
-					<div class="e">011-1213-4457</div>
-					<div class="o">010-1234-4566</div>
-					<div class="e">017-1243-4457</div>
+					<div class="o">/test</div>
+					<div class="e">/a</div>
+					<div class="o">/b</div>
 				</td>
 			</tr>
 		</tbody>
@@ -179,75 +151,71 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
 <section id="output">
 	<h3>output</h3>
 	<table class="lines">
-		<!-- STRING or MATCH type -->
-		<tbody>
+		<!-- GROUP type -->
+		<thead>
 			<tr>
-				<td class="line-number">
-					<div class="o">1</div>
-					<div class="e">2</div>
-					<div class="o">3</div>
-					<div class="e">4</div>
-					<div class="o">5</div>
-					<div class="e">6</div>
-					<div class="o">7</div>
-					<div class="e">8</div>
-					<div class="o">9</div>
-					<div class="e">10</div>
-				</td>
-				<td class="data">
-					<div class="o">
-							01012344566
-
-
-					</div>
-					<div class="e">
-							011123445
-
-
-					</div>
-					<div class="o">
-							01012344566
-
-
-					</div>
-					<div class="e">
-							0113234457
-
-
-					</div>
-					<div class="o">
-							01012344566
-
-
-					</div>
-					<div class="e">
-							01914234457
-
-
-					</div>
-					<div class="o">
-							01012344566
-
-
-					</div>
-					<div class="e">
-							01112134457
-
-
-					</div>
-					<div class="o">
-							01012344566
-
-
-					</div>
-					<div class="e">
-							01712434457
-
-
-					</div>
-				</td>
+				<th></th>
+				
+					<th>Rewritten URL</th>
+					<th>Parameter</th>
+				<th class="space">&nbsp;</th>
 			</tr>
-		</tbody>
+		</thead>
+		<tbody>
+
+
+
+
+					<tr>
+							<td class="line-number e" rowspan="2">
+								<div>2</div>
+							</td>
+
+
+							<td class="data group-data">
+								<div class="e">/b</div>
+							</td>
+							<td class="data group-data">
+								<div class="e">var1=a</div>
+							</td>
+
+
+						<td class="data space"><div class="e">&nbsp;</div></td>
+					</tr>
+
+					<tr class="l">
+
+
+							<td class="data group-data">
+								<div class="o">/c</div>
+							</td>
+							<td class="data group-data">
+								<div class="o">var2=b&amp;var1=a</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+
+					<tr class="l">
+							<td class="line-number o" rowspan="1">
+								<div>3</div>
+							</td>
+
+
+							<td class="data group-data">
+								<div class="o">/c</div>
+							</td>
+							<td class="data group-data">
+								<div class="o">var2=b</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+
 		
 	</table>
 </section>
@@ -258,8 +226,8 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;</pre>
 	
 	<script type="text/javascript">
 		var disqus_config = function () {
-			this.page.url = 'http://regular.express/share/b93471f2c93f06494256aac2cf513e7f';
-			this.page.identifier = '/share/b93471f2c93f06494256aac2cf513e7f';
+			this.page.url = 'http://regular.express/share/b32cc04831cbfb3bafa26aafc0088cf9';
+			this.page.identifier = '/share/b32cc04831cbfb3bafa26aafc0088cf9';
 		};
 		(function() {
 			var d = document, s = d.createElement('script');
