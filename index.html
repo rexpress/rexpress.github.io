@@ -675,12 +675,27 @@ Replace phone number like &#39;010-1234-5678&#39; to &#39;01012345678&#39;
 		</div>
 		<script type="text/javascript">
 			(function() {
+
+				function resize() {
+					var windowWidth = $(window).innerWidth();
+					if (windowWidth <= 500)
+						$('#news .groups section').css('width', $('#news .groups').width());
+					
+					var secDom = $('#news .groups section');
+					$('#news .groups .container').css('width', secDom.length * secDom.outerWidth(true) - 10);
+				}
+				resize();
+				$(window).resize(resize);
+
 				$('#news').find('.prev-btn, .next-btn').click(function (event) {
-					var sectionWidth = $('#news .groups section').width();
+					var sectionWidth = $('#news .groups section').outerWidth(true);
 
 					var dom = $(event.target).parent().find('.groups');
-					var w = dom.width();// - sectionWidth;
+					var w = dom.width();
 					var dest = dom.scrollLeft();
+
+					if (sectionWidth > w)
+						w = sectionWidth;
 
 					if ($(event.target).hasClass("prev-btn"))	dest -= w;
 					else										dest += w;

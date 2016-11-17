@@ -49,6 +49,7 @@ section#news .groups section{
 	padding: 0;
 	float: left;
 }
+section#news .groups .container > section:last-child{ margin-right: 0 }
 
 section#news .groups section .header{
 	font-size: 16px;
@@ -243,6 +244,8 @@ footer a{ color: #6883a7 }
 
 	section#lw .screenshot img{
 		width: 100%;
+		border-left: none;
+		border-right: none;
 	}
 
 	section#environments{

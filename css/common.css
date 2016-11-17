@@ -74,7 +74,7 @@ header{
 
 header #logo{
 	width: 200px;
-	height: 38px;
+	height: 35px;
 }
 
 header #logo a{
@@ -87,14 +87,14 @@ header #logo a{
 header #logo #logo-content{
 	width: inherit;
 	height: inherit;
-	background-image: url('../images/logo-white.png');
+	background-image: url('../images/logo-400x.png');
 	background-repeat: no-repeat;
 	background-size: 200px;
 }
 
 header ul#gnb{
 	list-style: none;
-	margin: 10px 0 0 40px;
+	margin: 7px 0 0 40px;
 	padding: 0;
 }
 
@@ -251,7 +251,10 @@ section#search .tags .tag{
 		width: 170px;
 		height: 36px;
 	}
-	header #logo #logo-content{ background-size: 170px }
+	header #logo #logo-content{
+		background-image: url('../images/logo-340x.png');
+		background-size: 170px;
+	}
 
 	header ul#gnb{
 		float: none;
