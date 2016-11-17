@@ -101,6 +101,8 @@ section#properties table tr td.key{
 	text-align: right;
 	margin-right: 17px;
 	padding: 2px 15px 2px 2px;
+	min-width: 100px;
+	vertical-align: top;
 }
 
 section#properties table tr td.key i.tooltip{
@@ -117,6 +119,7 @@ section#properties table tr td.key span{
 	*zoom: 1;
 	margin-right: 11px;
 }
+section#properties table td.key .required{ color: #f76b3c; font-weight: bold; margin-right: 0 }
 section#properties table tr.no-value td.key i.tooltip{ color: #ccc }
 
 
@@ -159,6 +162,7 @@ table.lines tr th{
 table.lines tr td{
 	margin: 0;
 	padding: 0;
+	vertical-align: top;
 }
 
 table.lines tr td.space,
