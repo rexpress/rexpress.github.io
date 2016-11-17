@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+p{
+	color: #444;
+	font-size: 17px;
+	font-weight: 300;
+	margin: -3px 0 15px 0;
+	padding: 0;
+}
+
+.buttons a{
+	display: inline-block;
+	*zoom: 1;
+
+	padding: 8px 35px 13px;
+	margin: 0 4px;
+
+	background-color: #123765;
+	color: white;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 1em;
+
+	transition: background-color 0.5s;
+}
+.buttons a .large{ font-size: 20px; }
+.buttons a .sub{ font-size: 12px; }
+
+section#download{
+	margin: 25px 0;
+	padding: 15px;
+	text-align: center;
+}
+
+section#download img{
+	border: 1px solid #ccc;
+}
+section#download .buttons{
+	margin: 20px 0;
+}
+section#download .buttons a:hover{ background-color: #264058 }
+
+section#developers{
+	padding: 20px;
+	background-color: #eee;
+}
+section#developers p{ text-align: center; }
+
+
+section#developers code{
+	display: block;
+	width: 430px;
+	padding: 0 25px;
+	margin: 5px auto;
+
+	white-space: pre-wrap;
+	text-align: left;
+	font: 15px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	background-color: #e0e0e0;
+	border-radius: 7px;
+}
+section#developers .buttons{ text-align: center; margin: 15px }
+section#developers .buttons a{
+	padding: 15px 20px;
+	background-color: #555;
+	font-size: 14px;
+}
+section#developers .buttons a:hover{ background-color: #666; }
+
+section#developers .top-line{
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+}
+
+
+@media (max-width: 480px) {
+	section#download{
+		margin-top: 5px;
+	}
+
+	section#download img{
+		width: 95%;
+	}
+
+	section#developers code{
+		width: calc(100% - 50px);
+		font-size: 14px;
+	}
+}

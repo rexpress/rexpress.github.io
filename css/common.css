@@ -55,14 +55,16 @@ a{ outline: none; }
 .hidden2{ display: none }
 
 
-
-
 /* layout/default */
 
 .color-python	{ color: #3671a3 !important; }
 .color-java		{ color: #eb8000 !important; }
 .color-flume	{ color: #672c00 !important; }
 .color-hive		{ color: #a58400 !important; }
+.color-php		{ color: #410061 !important; }
+.color-nginx	{ color: #7cc375 !important; }
+.color-nodejs	{ color: #ad004d !important; }
+.color-cpp		{ color: #43853d !important; }
 
 
 header{

@@ -141,27 +141,32 @@ section#lw .description{
 	margin: -7px 0 13px 0;
 }
 
+section#lw .screenshot img{
+	border: 1px solid #bbb;
+}
+
 section#lw .buttons{ margin: 20px 0 30px }
 
 section#lw .buttons a{
 	display: inline-block;
 	*zoom: 1;
 
-	padding: 13px 38px;
+	/*padding: 13px 38px;*/
+	padding: 13px;
+	width: 115px;
+	text-align: center;
 	
 	background-color: #123765;
 	color: white;
-	border-radius: 5px;
+	border-radius: 4px;
 	text-decoration: none;
 	font-weight: 300;
 
 	transition: background-color 0.5s;
 }
-section#lw .buttons a:hover{
-	background-color: #264058;
-}
-
-
+section#lw .buttons a:hover{ background-color: #264058 }
+section#lw .buttons a.github{ background-color: #555; }
+section#lw .buttons a.github:hover{ background-color: #666; }
 
 /*
  * environments section
@@ -180,11 +185,17 @@ section#environments > .description{ color: #888 }
 
 section#environments ul{
 	list-style: none;
-	padding: 50px 0 20px;
-	margin: 0;
-
-	width: 750px;
 	margin: 0 auto;
+}
+
+section#environments ul.first{
+	padding: 50px 0 0;
+	width: 490px;
+}
+section#environments ul.second{
+	margin-top: -20px;
+	padding: 0;
+	width: 500px
 }
 
 section#environments ul li{
@@ -193,8 +204,12 @@ section#environments ul li{
 	padding: 0 25px;
 	color: #666;
 }
-
-section#environments ul li.with-text{ font-size: 23px; padding-top: 27px; }
+section#environments ul li.smaller{ font-size: 60px; margin-top: 7px }
+section#environments ul li.with-text{
+	font-size: 23px;
+	padding-top: 27px;
+	font-weight: bold;
+}
 
 footer{
 	background-color: #292929;
@@ -230,8 +245,26 @@ footer a{ color: #6883a7 }
 		width: 100%;
 	}
 
+	section#environments{
+		padding: 25px;
+	}
+}
+
+@media (max-width: 480px) {
 	section#environments ul{
-		width: 100%;
+		width: 270px !important;
+	}
+
+	section#environments ul li{
+		width: 85px;
+		height: 100px;
+		text-align: center;
+	}
+
+	section#environments ul li.with-text{
+		width: 115px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
