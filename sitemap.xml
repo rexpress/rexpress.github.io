@@ -22,10 +22,6 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/php/php5.6-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/php/php5.6-split/</loc>
 		<priority>0.5</priority>
 	</url>
@@ -34,63 +30,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nginx/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-findall/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
+		<loc>http://regular.express/env/php/php5.6-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -102,12 +42,60 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/</loc>
+		<loc>http://regular.express/env/python/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.2.0-group/</loc>
+		<loc>http://regular.express/env/python/python3-match/</loc>
 		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-findall/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/</loc>
+		<priority>0.4</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/nodejs/nodejs6.2.0-replace/</loc>
@@ -115,6 +103,18 @@
 	</url>
 	<url>
 		<loc>http://regular.express/env/nodejs/nodejs6.2.0-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/nodejs6.2.0-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
 		<priority>0.5</priority>
 	</url>
 
@@ -148,6 +148,10 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>http://regular.express/share/9fa14a8bd055f50f40e7ae8167e244b7</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/share/853da67c4acd07ba9e1abfa5a50029e6</loc>
 		<priority>0.8</priority>
 	</url>
@@ -160,6 +164,10 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>http://regular.express/share/6353023608f91fc402c7a8ab2a14a523</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/share/542370447bb2b5e7fb8bf5cafaf44cb5</loc>
 		<priority>0.8</priority>
 	</url>
@@ -169,6 +177,10 @@
 	</url>
 	<url>
 		<loc>http://regular.express/share/2c7c4b21d79ad590c9a2c5ed0c094f68</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/share/0d673a3ca8842dc6b47dbdb9ab48ea5a</loc>
 		<priority>0.8</priority>
 	</url>
 	<url>
