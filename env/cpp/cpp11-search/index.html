@@ -2,7 +2,7 @@
 <html>
 <head>
 		
-	<title>Oracle Java 8 Regex Group - Environment</title>
+	<title>C++ 11 Regex Search - Environment</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,10 +12,10 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="Oracle Java 8 Regex Group environment">
-	<meta name="Description" content="Oracle Java 8 Regex Group environment in regular.express"> 
-	<meta name="Classification" content="environments/java">
-	<meta property="og:description" content="Oracle Java 8 Regex Group environment in regular.express">
+	<meta name="Subject" content="C++ 11 Regex Search environment">
+	<meta name="Description" content="C++ 11 Regex Search environment in regular.express"> 
+	<meta name="Classification" content="environments/cpp">
+	<meta property="og:description" content="C++ 11 Regex Search environment in regular.express">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -65,22 +65,22 @@
 	<div id="content">
 	<section class="header env-child">
 		<h1>
-			<i class="devicon-java-plain"></i>
+			<i class="devicon-cplusplus-plain"></i>
 			<span class="sub">
-				<a href="/env/java">java &gt;</a>
+				<a href="/env/cpp">cpp &gt;</a>
 			</span>
-			<span>Oracle Java 8 Regex Group</span>
+			<span>C++ 11 Regex Search</span>
 		</h1>
 
 		<div class="env-description">
-			<p>Testing oracle java 8 regular expression for capturing group.</p>
+			<p>Testing C++ 11 regex_search function</p>
 			<p class="author">author @regular.express</p>
 
 			<p class="docker">
 				<i class="devicon-docker-plain"></i>
 				<span>Image on</span>
 				<span>
-					<a href="https://hub.docker.com/r/regexpress/java">regexpress/java</a>
+					<a href="https://hub.docker.com/r/regexpress/cpp">regexpress/cpp</a>
 					
 				</span>
 			</p>
@@ -91,93 +91,119 @@
 			<ul>
 				<li class="clearfix">
 					<div class="fl key">
-<span class="required">*</span>						<span class="type">string</span>
-						<span class="name">regex</span>
+						<span class="type">list</span>
+						<span class="name">syntax_type</span>
 					</div>
 					<div class="fl value">
-						<span>Regex string.</span>
+						<span>Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">CANON_EQ</span>
+						<span class="name">icase</span>
 					</div>
 					<div class="fl value">
-						<span>Force canonical equivalence</span>
+						<span>Regular expressions match without regard to case.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">CASE_INSENSITIVE</span>
+						<span class="name">nosubs</span>
 					</div>
 					<div class="fl value">
-						<span>Case insensitive</span>
+						<span>The match_results structure will not contain sub-expression matches.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">COMMENTS</span>
+						<span class="name">optimize</span>
 					</div>
 					<div class="fl value">
-						<span>Allow comments in regex</span>
+						<span>Matching efficiency is preferred over efficiency constructing regex objects.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">DOTALL</span>
+						<span class="name">collate</span>
 					</div>
 					<div class="fl value">
-						<span>Dot matches line terminator</span>
+						<span>Character ranges, like &#34;[a-b]&#34;, are affected by locale.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">LITERAL</span>
+						<span class="name">match_not_bol</span>
 					</div>
 					<div class="fl value">
-						<span>Treat as a sequence of literal characters</span>
+						<span>The first character is not considered a beginning of line (&#34;^&#34; does not match).</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">MULTILINE</span>
+						<span class="name">match_not_eol</span>
 					</div>
 					<div class="fl value">
-						<span>^ and $ match EOL</span>
+						<span>The last character is not considered an end of line (&#34;$&#34; does not match).</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">UNICODE_CASE</span>
+						<span class="name">match_not_bow</span>
 					</div>
 					<div class="fl value">
-						<span>Unicode case matching</span>
+						<span>The escape sequence &#34;\b&#34; does not match as a beginning-of-word.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">UNIX_LINES</span>
+						<span class="name">match_not_eow</span>
 					</div>
 					<div class="fl value">
-						<span>Only consider &#39;
-&#39; as line terminator</span>
+						<span>The escape sequence &#34;\b&#34; does not match as an end-of-word.</span>
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="fl key">
 						<span class="type">boolean</span>
-						<span class="name">UNICODE_CHARACTER_CLASS</span>
+						<span class="name">match_any</span>
 					</div>
 					<div class="fl value">
-						<span>Enables the Unicode version of Predefined character classes and * POSIX character classes</span>
+						<span>Any match is acceptable if more than one match is possible.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">match_not_null</span>
+					</div>
+					<div class="fl value">
+						<span>Empty sequences do not match.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">match_continuous</span>
+					</div>
+					<div class="fl value">
+						<span>The expression must match a sub-sequence that begins at the first character. Sub-sequences must begin at the first character to match.</span>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="fl key">
+						<span class="type">boolean</span>
+						<span class="name">match_prev_avail</span>
+					</div>
+					<div class="fl value">
+						<span>One or more characters exist before the first one. (match_not_bol and match_not_bow are ignored)</span>
 					</div>
 				</li>
 			</ul>
@@ -187,58 +213,9 @@
 
 		<h2 class="ctr">Sharings</h2>
 	<section id="share-list">
-			<ul id="list" class="clearfix">
-				<li><div class="share-tile">
-	<a href="/share/a69425f9d9dc1b1d70b5a813c77287f6">
-		<h4>
-			test1
-		</h4>
-		<div class="description">
-			test1 !!
-		</div>
-	</a>
-
-	<div class="tags">
-		<a href="/env/java/oraclejdk8-group">
-			<span class="tag tag-mini tag-special">
-				&gt; oraclejdk8-group
-			</span>
-		</a>
-	
-		<a href="/tag/test">
-			<span class="tag tag-mini">
-				# test
-			</span>
-		</a>
-		<a href="/tag/java">
-			<span class="tag tag-mini">
-				# java
-			</span>
-		</a>
-	</div>
-
-	<ul class="properties">
-				<li>
-	<span class="key">regex</span>
-	<span class="value">([0-9]+)</span>
-</li>
-
-
-	</ul>
-
-	<div class="last clearfix">
-		<div class="author fl">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=25">
-			<span class="author-name">Youngsoo Lee</span>
-		</div>
-		<div class="created fr">
-			2016-09-28 10:09:11
-		</div>
-	</div>
-</div>
-</li>
-			</ul>
-
+			<div class="no-sharings">
+				- No sharings yet -
+			</div>
 
 		<div class="dynamic-container clearfix"></div>
 	</section>

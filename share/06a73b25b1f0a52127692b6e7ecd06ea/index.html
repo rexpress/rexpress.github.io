@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>number wrapper - regular.express</title>
+	<title>Test telephone - regular.express</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,10 +12,10 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="number wrapper">
-	<meta name="Description" content="python replace test"> 
-	<meta name="Classification" content="python3-replace">
-	<meta property="og:description" content="python replace test">
+	<meta name="Subject" content="Test telephone">
+	<meta name="Description" content="Desc"> 
+	<meta name="Classification" content="hive2.10-serde">
+	<meta property="og:description" content="Desc">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -75,27 +75,27 @@
 	<div id="content">
 <section id="meta">
 	<div class="first">
-		<h2>number wrapper</h2>
+		<h2>Test telephone</h2>
 
 		<div class="sub">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=44">
-			<span class="author-name">Youngsoo Lee</span>
+			<img class="profile" src="https://avatars.githubusercontent.com/u/9635637?size=44">
+			<span class="author-name">Sokcuri</span>
 			<span class="datetime">
-				2016-11-18 18:09:41
+				2016-11-19 18:07:06
 			</span>
 		</div>
 	</div>
 
 	<div class="second">
-		<pre id="description">python replace test</pre>
+		<pre id="description">Desc</pre>
 
 		<div class="tags">
 			<span class="tag tag-special">
-				<a href="/env/python">
-					<span class="env-group">python&gt;</span>
+				<a href="/env/hive">
+					<span class="env-group">hive&gt;</span>
 				</a>
-				<a href="/env/python/python3-replace">
-					<span class="env-child">python3-replace</span>
+				<a href="/env/hive/hive2.10-serde">
+					<span class="env-child">hive2.10-serde</span>
 				</a>
 			</span>
 
@@ -103,6 +103,54 @@
 	</div>
 </section>
 
+<section id="properties">
+	<h3><a href="/env/hive/hive2.10-serde">properties</a></h3>
+
+	<div class="content">
+		<table>
+			<tbody>
+					<tr>
+						<td class="key">
+<span class="required">*</span>							<span>input.regex</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regex string."></i>
+						</td>
+						<td class="value">
+							<span>(0[0-9]{2})-([0-9]{3,4})-([0-9]{3,4})</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+<span class="required">*</span>							<span>columns</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Whitepsace seperated column list."></i>
+						</td>
+						<td class="value">
+							<span>A,B,C</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+<span class="required">*</span>							<span>columns.types</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Comma seperated column type list."></i>
+						</td>
+						<td class="value">
+							<span>STRING,STRING,STRING</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>input.regex.case.insensitive</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Determine regex case insensitive."></i>
+						</td>
+						<td class="value">
+							<span>False</span>
+						</td>
+					</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+</section>
 
 
 <section id="input">
@@ -113,19 +161,9 @@
 			<tr>
 				<td class="line-number">
 					<div class="o">1</div>
-					<div class="e">2</div>
-					<div class="o">3</div>
-					<div class="e">4</div>
-					<div class="o">5</div>
-					<div class="e">6</div>
 				</td>
 				<td class="data">
-					<div class="o">010-1234-5678</div>
-					<div class="e">das</div>
-					<div class="o">130-132-3-31</div>
-					<div class="e">82-10-313-4-132</div>
-					<div class="o">31-312</div>
-					<div class="e">a-da</div>
+					<div class="o">010-1234-4567</div>
 				</td>
 			</tr>
 		</tbody>
@@ -135,51 +173,42 @@
 <section id="output">
 	<h3>output</h3>
 	<table class="lines">
-		<!-- STRING or MATCH type -->
-		<tbody>
+		<!-- GROUP type -->
+		<thead>
 			<tr>
-				<td class="line-number">
-					<div class="o">1</div>
-					<div class="e">2</div>
-					<div class="o">3</div>
-					<div class="e">4</div>
-					<div class="o">5</div>
-					<div class="e">6</div>
-				</td>
-				<td class="data">
-					<div class="o">
-							&lt;010&gt;-&lt;1234&gt;-&lt;5678&gt;
-
-
-					</div>
-					<div class="e">
-							das
-
-
-					</div>
-					<div class="o">
-							&lt;130&gt;-&lt;132&gt;-&lt;3&gt;-&lt;31&gt;
-
-
-					</div>
-					<div class="e">
-							&lt;82&gt;-&lt;10&gt;-&lt;313&gt;-&lt;4&gt;-&lt;132&gt;
-
-
-					</div>
-					<div class="o">
-							&lt;31&gt;-&lt;312&gt;
-
-
-					</div>
-					<div class="e">
-							a-da
-
-
-					</div>
-				</td>
+				<th></th>
+				
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+				<th class="space">&nbsp;</th>
 			</tr>
-		</tbody>
+		</thead>
+		<tbody>
+
+
+
+					<tr class="l">
+							<td class="line-number o" rowspan="1">
+								<div>1</div>
+							</td>
+
+
+							<td class="data group-data">
+								<div class="o">010</div>
+							</td>
+							<td class="data group-data">
+								<div class="o">1234</div>
+							</td>
+							<td class="data group-data">
+								<div class="o">4567</div>
+							</td>
+
+
+						<td class="data space"><div class="o">&nbsp;</div></td>
+					</tr>
+
+
 		
 	</table>
 </section>
@@ -190,8 +219,8 @@
 	
 	<script type="text/javascript">
 		var disqus_config = function () {
-			this.page.url = 'http://regular.express/share/065b1ad0b083d24a9f5e9972dd142aa9';
-			this.page.identifier = '/share/065b1ad0b083d24a9f5e9972dd142aa9';
+			this.page.url = 'http://regular.express/share/06a73b25b1f0a52127692b6e7ecd06ea';
+			this.page.identifier = '/share/06a73b25b1f0a52127692b6e7ecd06ea';
 		};
 		(function() {
 			var d = document, s = d.createElement('script');
