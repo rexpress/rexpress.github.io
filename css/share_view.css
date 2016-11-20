@@ -78,6 +78,7 @@ section .content {
 
 section#properties .content{
 	padding: 20px 60px;
+	overflow: auto;
 }
 
 section#properties table{
@@ -136,6 +137,8 @@ section#properties table tr td.value span{
 section#properties table tr.no-value td.value span{ background-color: #e0e0e0; padding: 2px 2px; }
 
 
+section#input > div,
+section#output > div{ overflow: auto; }
 
 
 table.lines{

@@ -131,7 +131,11 @@ footer a{
 footer a:hover{ text-decoration: underline; }
 
 
-.tags a{ text-decoration: none; }
+.tags a{
+	display: inline-block;
+	*zoom: 1;
+	text-decoration: none;
+}
 
 .tag{
 	background-color: #777;

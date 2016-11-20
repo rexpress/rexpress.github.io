@@ -39,7 +39,7 @@ section#env-list ul li .description{
 }
 section#env-list ul li .description > div{ margin: 7px 0 }
 
-section#env-list ul li .description .children a{ text-decoration: none; }
+section#env-list ul li .description .children a{ text-decoration: none; margin: 3px 0; display: inline-block; }
 section#env-list ul li .description .children a .tag{
 	margin-right: 3px;
 	padding: 3px 7px;
