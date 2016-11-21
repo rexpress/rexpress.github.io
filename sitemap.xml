@@ -30,8 +30,32 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>http://regular.express/env/php/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/php/php5.6-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/php/php5.6-grep/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/php/php5.6-split/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/env/flume/</loc>
 		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
@@ -42,16 +66,16 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<loc>http://regular.express/env/nginx/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/java/</loc>
 		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
-		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
@@ -62,11 +86,27 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/hive/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
+		<loc>http://regular.express/env/python/python3-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-findall/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -86,55 +126,19 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/python/</loc>
+		<loc>http://regular.express/env/hive/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/python/python3-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-findall/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nginx/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/php5.6-grep/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/php5.6-split/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/php5.6-replace/</loc>
+		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
 		<priority>0.5</priority>
 	</url>
 
 
+	<url>
+		<loc>http://regular.express/share/f12a62e765f805e5107a18e2f1f76a1a</loc>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>http://regular.express/share/dd5105815b73d669f410b5d35e1bb47b</loc>
 		<priority>0.8</priority>
