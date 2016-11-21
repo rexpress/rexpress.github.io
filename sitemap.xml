@@ -14,35 +14,35 @@
 
 
 	<url>
-		<loc>http://regular.express/env/nodejs/</loc>
+		<loc>http://regular.express/env/c++/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
+		<loc>http://regular.express/env/c++/c++11-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-group/</loc>
+		<loc>http://regular.express/env/c++/c++11-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-replace/</loc>
+		<loc>http://regular.express/env/c++/c++11-search/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/</loc>
+		<loc>http://regular.express/env/nginx/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
-		<priority>0.5</priority>
+		<loc>http://regular.express/env/hive/</loc>
+		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
+		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -66,28 +66,24 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/hive/</loc>
+		<loc>http://regular.express/env/flume/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nginx/</loc>
-		<priority>0.4</priority>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/php/</loc>
 		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
-		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/php/php5.6-grep/</loc>
@@ -102,35 +98,39 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/</loc>
+		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-group/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/c++/</loc>
+		<loc>http://regular.express/env/java/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/c++/c++11-search/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/c++/c++11-replace/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/c++/c++11-match/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 
@@ -148,10 +148,6 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/share/c5329aed0f8e725fac4cc23f6ca5552a</loc>
-		<priority>0.8</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/share/c0a47e32ca48eae347f0c83c157a36ca</loc>
 		<priority>0.8</priority>
 	</url>
@@ -165,10 +161,6 @@
 	</url>
 	<url>
 		<loc>http://regular.express/share/a69425f9d9dc1b1d70b5a813c7729539</loc>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/share/a69425f9d9dc1b1d70b5a813c77287f6</loc>
 		<priority>0.8</priority>
 	</url>
 	<url>
@@ -205,10 +197,6 @@
 	</url>
 	<url>
 		<loc>http://regular.express/share/065b1ad0b083d24a9f5e9972dd142aa9</loc>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/share/00d956b55dda1c24839b74796fbf2c58</loc>
 		<priority>0.8</priority>
 	</url>
 	<url>

@@ -27,6 +27,13 @@ p{
 .buttons a .large{ font-size: 20px; }
 .buttons a .sub{ font-size: 12px; }
 
+p.sub,
+p.sub a{
+	margin: 0;
+	font-size: 14px;
+	color: #555;
+}
+
 section#download{
 	margin: 25px 0;
 	padding: 15px;
