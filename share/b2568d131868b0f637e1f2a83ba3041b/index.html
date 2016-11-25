@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>Email validation check - regular.express</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<meta name="Robots" content="ALL">
+	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://regular.express/images/iconx400.png">
+	<meta name="Subject" content="Email validation check">
+	<meta name="Description" content="Check if email is valid address"> 
+	<meta name="Classification" content="nodejs6.7.0-match">
+	<meta property="og:description" content="Check if email is valid address">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/macro.css">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/share_view.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tooltip').tooltipster({
+				theme: 'tooltipster-light'
+			});
+		});
+	</script>
+</head>
+<body>
+	<header class="clearfix">
+		<div id="logo" class="fl">
+			<a href="/">
+				<div id="logo-content">
+					<span class="hidden2">regular.express</span>
+				</div>
+			</a>
+		</div>
+
+
+
+		<ul id="gnb" class="fl clearfix">
+			<li>
+			<a href="/">HOME</a>
+		</li>
+
+			<li>
+			<a href="/env/">ENVIRONMENTS</a>
+		</li>
+
+			<li>
+			<a href="/download/">DOWNLOAD</a>
+		</li>
+
+		</ul>
+	</header>
+	
+	<div id="content">
+<section id="meta">
+	<div class="first">
+		<h2>Email validation check</h2>
+
+		<div class="sub">
+			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=44">
+			<span class="author-name">Youngsoo Lee</span>
+			<span class="datetime">
+				2016-11-25 18:39:44
+			</span>
+		</div>
+	</div>
+
+	<div class="second">
+		<pre id="description">Check if email is valid address</pre>
+
+		<div class="tags">
+			<span class="tag tag-special">
+				<a href="/env/nodejs">
+					<span class="env-group">nodejs&gt;</span>
+				</a>
+				<a href="/env/nodejs/nodejs6.7.0-match">
+					<span class="env-child">nodejs6.7.0-match</span>
+				</a>
+			</span>
+
+		</div>
+	</div>
+</section>
+
+<section id="properties">
+	<h3><a href="/env/nodejs/nodejs6.7.0-match">properties</a></h3>
+
+	<div class="content">
+		<table>
+			<tbody>
+					<tr>
+						<td class="key">
+<span class="required">*</span>							<span>regex</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regular Expression."></i>
+						</td>
+						<td class="value">
+							<span>([A-Za-z0-9._-]+)@([A-Za-z0-9._-]{2,})\.([A-Za-z0-9._-]{2,})</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>global</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="find all matches rather than stopping after the first match"></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>ignore</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="ignore case"></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>multiline</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="treat beginning and end characters (^ and $) as working over multiple lines (i.e., match the beginning or end of each line (delimited by 
+ or ), not only the very beginning or end of the whole input string)"></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>unicode</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="treat pattern as a sequence of unicode code points"></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="key">
+							<span>sticky</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="matches only from the index indicated by the lastIndex property of this regular expression in the target string (and does not attempt to match from any later indexes)."></i>
+						</td>
+						<td class="value">
+							<span></span>
+						</td>
+					</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+</section>
+
+
+<section id="input">
+	<h3>input</h3>
+	<div>
+		<table class="lines">
+			<tbody>
+				<tr>
+					<td class="line-number">
+						<div class="o">1</div>
+						<div class="e">2</div>
+						<div class="o">3</div>
+						<div class="e">4</div>
+						<div class="o">5</div>
+						<div class="e">6</div>
+						<div class="o">7</div>
+						<div class="e">8</div>
+					</td>
+					<td class="data">
+						<div class="o">test@test.com</div>
+						<div class="e">das.das</div>
+						<div class="o">tester@te.com</div>
+						<div class="e">student@snu.ac.kr</div>
+						<div class="o">a@a.com</div>
+						<div class="e">user.2@gmail.com</div>
+						<div class="o">da.com</div>
+						<div class="e">b!!bbc@d.org</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<section id="output">
+	<h3>output</h3>
+	<div>
+		<table class="lines">
+			<!-- STRING or MATCH type -->
+			<tbody>
+				<tr>
+					<td class="line-number">
+						<div class="o">1</div>
+						<div class="e">2</div>
+						<div class="o">3</div>
+						<div class="e">4</div>
+						<div class="o">5</div>
+						<div class="e">6</div>
+						<div class="o">7</div>
+						<div class="e">8</div>
+					</td>
+					<td class="data">
+						<div class="o">
+								<span class="m">Matched</span>
+
+						</div>
+						<div class="e">
+								<span class="u">UnMatched</span>
+
+						</div>
+						<div class="o">
+								<span class="m">Matched</span>
+
+						</div>
+						<div class="e">
+								<span class="m">Matched</span>
+
+						</div>
+						<div class="o">
+								<span class="u">UnMatched</span>
+
+						</div>
+						<div class="e">
+								<span class="m">Matched</span>
+
+						</div>
+						<div class="o">
+								<span class="u">UnMatched</span>
+
+						</div>
+						<div class="e">
+								<span class="u">UnMatched</span>
+
+						</div>
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+	</div>
+</section>
+
+<section id="disqus-wrap">
+	<h3>comments</h3>
+	<div id="disqus_thread"></div>
+	
+	<script type="text/javascript">
+		var disqus_config = function () {
+			this.page.url = 'http://regular.express/share/b2568d131868b0f637e1f2a83ba3041b';
+			this.page.identifier = '/share/b2568d131868b0f637e1f2a83ba3041b';
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//regular-express.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+		</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	<script id="dsq-count-scr" src="//regular-express.disqus.com/count.js" async></script>
+</section>
+	</div>
+
+	<footer>
+		<span class="copy">&copy; 2016 regular.express</span>
+		
+		<a href="/terms">Terms &amp; Service</a>
+		<a href="https://github.com/rexpress">Github</a>
+	</footer>
+</body>
+</html>
