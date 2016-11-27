@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>Community - regular.express</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<meta name="Robots" content="ALL">
+	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://regular.express/images/iconx400.png">
+	<meta name="Subject" content="Community">
+	<meta name="Description" content="nginx"> 
+	<meta name="Classification" content="nginx1.10-rewrite">
+	<meta property="og:description" content="nginx">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/macro.css">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/share_view.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tooltip').tooltipster({
+				theme: 'tooltipster-light'
+			});
+		});
+	</script>
+</head>
+<body>
+	<header class="clearfix">
+		<div id="logo" class="fl">
+			<a href="/">
+				<div id="logo-content">
+					<span class="hidden2">regular.express</span>
+				</div>
+			</a>
+		</div>
+
+
+
+		<ul id="gnb" class="fl clearfix">
+			<li>
+			<a href="/">HOME</a>
+		</li>
+
+			<li>
+			<a href="/env/">ENVIRONMENTS</a>
+		</li>
+
+			<li>
+			<a href="/download/">DOWNLOAD</a>
+		</li>
+
+		</ul>
+	</header>
+	
+	<div id="content">
+<section id="meta">
+	<div class="first">
+		<h2>Community</h2>
+
+		<div class="sub">
+			<img class="profile" src="https://avatars.githubusercontent.com/u/23739590?size=44">
+			<span class="author-name">None</span>
+			<span class="datetime">
+				2016-11-27 13:14:50
+			</span>
+		</div>
+	</div>
+
+	<div class="second">
+		<pre id="description">nginx</pre>
+
+		<div class="tags">
+			<span class="tag tag-special">
+				<a href="/env/nginx">
+					<span class="env-group">nginx&gt;</span>
+				</a>
+				<a href="/env/nginx/nginx1.10-rewrite">
+					<span class="env-child">nginx1.10-rewrite</span>
+				</a>
+			</span>
+
+		</div>
+	</div>
+</section>
+
+<section id="properties">
+	<h3><a href="/env/nginx/nginx1.10-rewrite">properties</a></h3>
+
+	<div class="content">
+		<table>
+			<tbody>
+					<tr>
+						<td class="key">
+<span class="required">*</span>							<span>config</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Nginx location config."></i>
+						</td>
+						<td class="value">
+							<span>location / {
+rewrite ^/v/(.*)$ /index.html?q=$1;
+}</span>
+						</td>
+					</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+</section>
+
+
+<section id="input">
+	<h3>input</h3>
+	<div>
+		<table class="lines">
+			<tbody>
+				<tr>
+					<td class="line-number">
+						<div class="o">1</div>
+						<div class="e">2</div>
+						<div class="o">3</div>
+						<div class="e">4</div>
+					</td>
+					<td class="data">
+						<div class="o">/v/home</div>
+						<div class="e">/v/test</div>
+						<div class="o">/login</div>
+						<div class="e">/</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<section id="output">
+	<h3>output</h3>
+	<div>
+		<table class="lines">
+			<!-- GROUP type -->
+			<thead>
+				<tr>
+					<th></th>
+					
+						<th>Rewritten URL</th>
+						<th>Parameter</th>
+					<th class="space">&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+
+
+
+						<tr class="l">
+								<td class="line-number o" rowspan="1">
+									<div>1</div>
+								</td>
+
+
+								<td class="data group-data">
+									<div class="o">/index.html</div>
+								</td>
+								<td class="data group-data">
+									<div class="o">q=home</div>
+								</td>
+
+
+							<td class="data space"><div class="o">&nbsp;</div></td>
+						</tr>
+
+
+						<tr class="l">
+								<td class="line-number e" rowspan="1">
+									<div>2</div>
+								</td>
+
+
+								<td class="data group-data">
+									<div class="e">/index.html</div>
+								</td>
+								<td class="data group-data">
+									<div class="e">q=test</div>
+								</td>
+
+
+							<td class="data space"><div class="e">&nbsp;</div></td>
+						</tr>
+
+
+						<tr class="l">
+								<td class="line-number o" rowspan="1">
+									<div>3</div>
+								</td>
+
+
+								<td class="data group-data-null" colspan="2">
+									<div class="o">Null</div>
+								</td>
+
+							<td class="data space"><div class="o">&nbsp;</div></td>
+						</tr>
+
+
+						<tr class="l">
+								<td class="line-number e" rowspan="1">
+									<div>4</div>
+								</td>
+
+
+								<td class="data group-data-null" colspan="2">
+									<div class="e">Null</div>
+								</td>
+
+							<td class="data space"><div class="e">&nbsp;</div></td>
+						</tr>
+
+
+			
+		</table>
+	</div>
+</section>
+
+<section id="disqus-wrap">
+	<h3>comments</h3>
+	<div id="disqus_thread"></div>
+	
+	<script type="text/javascript">
+		var disqus_config = function () {
+			this.page.url = 'http://regular.express/share/8559806cd0b54a07d5ba34576c8ec72e';
+			this.page.identifier = '/share/8559806cd0b54a07d5ba34576c8ec72e';
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//regular-express.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+		</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	<script id="dsq-count-scr" src="//regular-express.disqus.com/count.js" async></script>
+</section>
+	</div>
+
+	<footer>
+		<span class="copy">&copy; 2016 regular.express</span>
+		
+		<a href="/terms">Terms &amp; Service</a>
+		<a href="https://github.com/rexpress">Github</a>
+	</footer>
+</body>
+</html>
