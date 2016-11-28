@@ -34,6 +34,7 @@ section#env-list ul li .name a{ text-decoration: none; color: #666; }
 section#env-list ul li .name i{ font-size: 33px }
 
 section#env-list ul li .description{
+	width: calc(100% - 180px);
 	font-size: 15px;
 	color: #444;
 }
