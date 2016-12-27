@@ -14,22 +14,6 @@
 
 
 	<url>
-		<loc>http://regular.express/env/java/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/cpp/</loc>
 		<priority>0.4</priority>
 	</url>
@@ -43,6 +27,38 @@
 	</url>
 	<url>
 		<loc>http://regular.express/env/cpp/cpp11-search/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/hive/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -66,11 +82,19 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nginx/</loc>
+		<loc>http://regular.express/env/flume/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -82,7 +106,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
+		<loc>http://regular.express/env/php/php5.6-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -90,7 +114,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/php/php5.6-replace/</loc>
+		<loc>http://regular.express/env/php/php5.6-matchall/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -102,35 +126,11 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/nodejs/nodejs6.7.0-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/hive/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/hive/hive2.10-serde/</loc>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
 		<priority>0.5</priority>
 	</url>
 
