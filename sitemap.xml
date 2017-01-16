@@ -34,22 +34,6 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/java/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/nodejs/</loc>
 		<priority>0.4</priority>
 	</url>
@@ -66,19 +50,19 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/cpp/</loc>
+		<loc>http://regular.express/env/java/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/cpp/cpp11-replace/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/cpp/cpp11-match/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/cpp/cpp11-search/</loc>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -90,11 +74,11 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/flume/flume1.6-filtering/</loc>
+		<loc>http://regular.express/env/flume/flume1.6-extractor/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -102,15 +86,15 @@
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/python/python3-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/python/python3-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/python/python3-findall/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-group/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -123,6 +107,22 @@
 	</url>
 	<url>
 		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/cpp/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/cpp/cpp11-search/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/cpp/cpp11-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/cpp/cpp11-match/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
