@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>CPP Search Test - regular.express</title>
+	<title>Alphabet match test - regular.express</title>
 	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -12,9 +12,9 @@
 	<meta name="Keywords" content="regular expression,regex,regexp,replace,match,group,tester,test,docker,isolated,flume,hive,nginx">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://regular.express/images/iconx400.png">
-	<meta name="Subject" content="CPP Search Test">
+	<meta name="Subject" content="Alphabet match test">
 	<meta name="Description" content=""> 
-	<meta name="Classification" content="cpp11-search">
+	<meta name="Classification" content="python3-match">
 	<meta property="og:description" content="">
 
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -75,13 +75,13 @@
 	<div id="content">
 <section id="meta">
 	<div class="first">
-		<h2>CPP Search Test</h2>
+		<h2>Alphabet match test</h2>
 
 		<div class="sub">
-			<img class="profile" src="https://avatars.githubusercontent.com/u/9635637?size=44">
-			<span class="author-name">Sokcuri</span>
+			<img class="profile" src="https://avatars.githubusercontent.com/u/3872573?size=44">
+			<span class="author-name">Youngsoo Lee</span>
 			<span class="datetime">
-				2016-11-25 21:55:05
+				2018-03-12 13:17:41
 			</span>
 		</div>
 	</div>
@@ -91,18 +91,24 @@
 
 		<div class="tags">
 			<span class="tag tag-special">
-				<a href="/env/cpp">
-					<span class="env-group">cpp&gt;</span>
+				<a href="/env/python">
+					<span class="env-group">python&gt;</span>
 				</a>
-				<a href="/env/cpp/cpp11-search">
-					<span class="env-child">cpp11-search</span>
+				<a href="/env/python/python3-match">
+					<span class="env-child">python3-match</span>
 				</a>
 			</span>
 
-			<a href="/tag/CPP">
+			<a href="/tag/python">
 				<span class="tag">
 					<span>#</span>
-					<span>CPP</span>
+					<span>python</span>
+				</span>
+			</a>
+			<a href="/tag/alphabet">
+				<span class="tag">
+					<span>#</span>
+					<span>alphabet</span>
 				</span>
 			</a>
 		</div>
@@ -110,7 +116,7 @@
 </section>
 
 <section id="properties">
-	<h3><a href="/env/cpp/cpp11-search">properties</a></h3>
+	<h3><a href="/env/python/python3-match">properties</a></h3>
 
 	<div class="content">
 		<table>
@@ -118,25 +124,16 @@
 					<tr>
 						<td class="key">
 <span class="required">*</span>							<span>regex</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regular expression."></i>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regular Expression."></i>
 						</td>
 						<td class="value">
-							<span>([A-Za-z]+)</span>
-						</td>
-					</tr>
-					<tr>
-						<td class="key">
-							<span>syntax_type</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."></i>
-						</td>
-						<td class="value">
-							<span>ECMAScript</span>
+							<span>([a-z]+)</span>
 						</td>
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>icase</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Regular expressions match without regard to case."></i>
+							<span>IGNORECASE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Perform case-insensitive matching; expressions like [A-Z] will match lowercase letters, too."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -144,8 +141,8 @@
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>nosubs</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The match_results structure will not contain sub-expression matches."></i>
+							<span>LOCALE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make \w, \W, \b, \B, \s and \S dependent on the current locale."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -153,8 +150,8 @@
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>optimize</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Matching efficiency is preferred over efficiency constructing regex objects."></i>
+							<span>MULTILINE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="When specified, the pattern character &#39;^&#39; matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character &#39;$&#39; matches at the end of the string and at the end of each line (immediately preceding each newline). By default, &#39;^&#39; matches only at the beginning of the string, and &#39;$&#39; only at the end of the string and immediately before the newline (if any) at the end of the string."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -162,8 +159,8 @@
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>collate</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Character ranges, like &#34;[a-b]&#34;, are affected by locale."></i>
+							<span>DOTALL</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make the &#39;.&#39; special character match any character at all, including a newline; without this flag, &#39;.&#39; will match anything except a newline."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -171,8 +168,8 @@
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>match_not_bol</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The first character is not considered a beginning of line (&#34;^&#34; does not match)."></i>
+							<span>ASCII</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Make \w, \W, \b, \B, \d, \D, \s and \S perform ASCII-only matching instead of full Unicode matching."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -180,62 +177,8 @@
 					</tr>
 					<tr class="no-value">
 						<td class="key">
-							<span>match_not_eol</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The last character is not considered an end of line (&#34;$&#34; does not match)."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_not_bow</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The escape sequence &#34;\b&#34; does not match as a beginning-of-word."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_not_eow</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The escape sequence &#34;\b&#34; does not match as an end-of-word."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_any</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Any match is acceptable if more than one match is possible."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_not_null</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="Empty sequences do not match."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_continuous</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="The expression must match a sub-sequence that begins at the first character. Sub-sequences must begin at the first character to match."></i>
-						</td>
-						<td class="value">
-							<span></span>
-						</td>
-					</tr>
-					<tr class="no-value">
-						<td class="key">
-							<span>match_prev_avail</span>
-							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="One or more characters exist before the first one. (match_not_bol and match_not_bow are ignored)"></i>
+							<span>VERBOSE</span>
+							<i class="fa fa-question-circle tooltip" aria-hidden="true" title="This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class or when preceded by an unescaped backslash. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored."></i>
 						</td>
 						<td class="value">
 							<span></span>
@@ -258,10 +201,18 @@
 					<td class="line-number">
 						<div class="o">1</div>
 						<div class="e">2</div>
+						<div class="o">3</div>
+						<div class="e">4</div>
+						<div class="o">5</div>
+						<div class="e">6</div>
 					</td>
 					<td class="data">
-						<div class="o">안녕하세요</div>
-						<div class="e">Cat</div>
+						<div class="o">das0dqx</div>
+						<div class="e">dqd</div>
+						<div class="o">1321</div>
+						<div class="e">dqwd231</div>
+						<div class="o">dADADQWD</div>
+						<div class="e">!#!%##!@@</div>
 					</td>
 				</tr>
 			</tbody>
@@ -273,48 +224,45 @@
 	<h3>output</h3>
 	<div>
 		<table class="lines">
-			<!-- GROUP type -->
-			<thead>
-				<tr>
-					<th></th>
-					
-						<th>Group #0</th>
-					<th class="space">&nbsp;</th>
-				</tr>
-			</thead>
+			<!-- STRING or MATCH type -->
 			<tbody>
+				<tr>
+					<td class="line-number">
+						<div class="o">1</div>
+						<div class="e">2</div>
+						<div class="o">3</div>
+						<div class="e">4</div>
+						<div class="o">5</div>
+						<div class="e">6</div>
+					</td>
+					<td class="data">
+						<div class="o">
+								<span class="m">Matched</span>
 
+						</div>
+						<div class="e">
+								<span class="m">Matched</span>
 
+						</div>
+						<div class="o">
+								<span class="u">UnMatched</span>
 
-						<tr class="l">
-								<td class="line-number o" rowspan="1">
-									<div>1</div>
-								</td>
+						</div>
+						<div class="e">
+								<span class="m">Matched</span>
 
+						</div>
+						<div class="o">
+								<span class="m">Matched</span>
 
-								<td class="data group-data-null" colspan="1">
-									<div class="o">Null</div>
-								</td>
+						</div>
+						<div class="e">
+								<span class="u">UnMatched</span>
 
-							<td class="data space"><div class="o">&nbsp;</div></td>
-						</tr>
-
-
-						<tr class="l">
-								<td class="line-number o" rowspan="1">
-									<div>2</div>
-								</td>
-
-
-								<td class="data group-data">
-									<div class="o">Cat</div>
-								</td>
-
-
-							<td class="data space"><div class="o">&nbsp;</div></td>
-						</tr>
-
-
+						</div>
+					</td>
+				</tr>
+			</tbody>
 			
 		</table>
 	</div>
@@ -326,8 +274,8 @@
 	
 	<script type="text/javascript">
 		var disqus_config = function () {
-			this.page.url = 'http://regular.express/share/1515e9a07f2c6f7b93539f6cfc14f9ee';
-			this.page.identifier = '/share/1515e9a07f2c6f7b93539f6cfc14f9ee';
+			this.page.url = 'http://regular.express/share/f9496269c2a21a13e9587337dc5aacb4';
+			this.page.identifier = '/share/f9496269c2a21a13e9587337dc5aacb4';
 		};
 		(function() {
 			var d = document, s = d.createElement('script');

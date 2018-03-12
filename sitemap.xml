@@ -14,14 +14,6 @@
 
 
 	<url>
-		<loc>http://regular.express/env/nginx/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/cpp/</loc>
 		<priority>0.4</priority>
 	</url>
@@ -35,38 +27,6 @@
 	</url>
 	<url>
 		<loc>http://regular.express/env/cpp/cpp11-search/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nodejs/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/nodejs/nodejs6.7.0-replace/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/</loc>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -94,11 +54,51 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>http://regular.express/env/java/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/java/oraclejdk8-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nginx/nginx1.10-rewrite/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/</loc>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-group/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/nodejs/nodejs6.7.0-replace/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>http://regular.express/env/php/</loc>
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/php/php5.6-replace/</loc>
+		<loc>http://regular.express/env/php/php5.6-grep/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -106,7 +106,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/php/php5.6-grep/</loc>
+		<loc>http://regular.express/env/php/php5.6-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -118,23 +118,27 @@
 		<priority>0.4</priority>
 	</url>
 	<url>
-		<loc>http://regular.express/env/python/python3-match/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>http://regular.express/env/python/python3-findall/</loc>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://regular.express/env/python/python3-replace/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://regular.express/env/python/python3-group/</loc>
 		<priority>0.5</priority>
 	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-match/</loc>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://regular.express/env/python/python3-replace/</loc>
+		<priority>0.5</priority>
+	</url>
 
 
+	<url>
+		<loc>http://regular.express/share/f9496269c2a21a13e9587337dc5aacb4</loc>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>http://regular.express/share/f12a62e765f805e5107a18e2f1f76a1a</loc>
 		<priority>0.8</priority>

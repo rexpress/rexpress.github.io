@@ -8,6 +8,19 @@ p{
 	padding: 0;
 }
 
+p.notice{
+	display: inline-block;
+	width: 520px;
+	text-align: center;
+	background-color: #fffcf1;
+	border: 1px solid #f7efda;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 10px 0 30px;
+}
+
+p.notice a{ color: #333; }
+
 .buttons a{
 	display: inline-block;
 	*zoom: 1;
@@ -51,6 +64,7 @@ section#download .buttons a:hover{ background-color: #264058 }
 section#developers{
 	padding: 20px;
 	background-color: #eee;
+	text-align: center;
 }
 section#developers p{ text-align: center; }
 
